@@ -1,0 +1,1172 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2365F7EB1BB916CB00D713F1 /* libluajit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 237E248B1BB53942003C37D6 /* libluajit.dylib */; };
+		2365F7FD1BB917B100D713F1 /* lauxlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24931BB53A04003C37D6 /* lauxlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2365F7FE1BB917B100D713F1 /* lua.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25151BB53A05003C37D6 /* lua.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2365F7FF1BB917B100D713F1 /* lua.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 237E25161BB53A05003C37D6 /* lua.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		2365F8001BB917B100D713F1 /* luaconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25171BB53A05003C37D6 /* luaconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2365F8011BB917B100D713F1 /* luajit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25191BB53A05003C37D6 /* luajit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2365F8021BB917B100D713F1 /* lualib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E251A1BB53A05003C37D6 /* lualib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2365F8091BB9180900D713F1 /* libluajit.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 237E248B1BB53942003C37D6 /* libluajit.dylib */; };
+		2365F80A1BB9180900D713F1 /* libluajit-static.a in Resources */ = {isa = PBXBuildFile; fileRef = 237E26571BB54092003C37D6 /* libluajit-static.a */; };
+		237E251B1BB53A05003C37D6 /* lauxlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24931BB53A04003C37D6 /* lauxlib.h */; settings = {ASSET_TAGS = (); }; };
+		237E252A1BB53A05003C37D6 /* lj_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A21BB53A04003C37D6 /* lj_alloc.h */; settings = {ASSET_TAGS = (); }; };
+		237E252C1BB53A05003C37D6 /* lj_arch.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A41BB53A04003C37D6 /* lj_arch.h */; settings = {ASSET_TAGS = (); }; };
+		237E252D1BB53A05003C37D6 /* lj_asm_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A51BB53A04003C37D6 /* lj_asm_arm.h */; settings = {ASSET_TAGS = (); }; };
+		237E252E1BB53A05003C37D6 /* lj_asm_mips.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A61BB53A04003C37D6 /* lj_asm_mips.h */; settings = {ASSET_TAGS = (); }; };
+		237E252F1BB53A05003C37D6 /* lj_asm_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A71BB53A04003C37D6 /* lj_asm_ppc.h */; settings = {ASSET_TAGS = (); }; };
+		237E25301BB53A05003C37D6 /* lj_asm_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A81BB53A04003C37D6 /* lj_asm_x86.h */; settings = {ASSET_TAGS = (); }; };
+		237E25321BB53A05003C37D6 /* lj_asm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24AA1BB53A04003C37D6 /* lj_asm.h */; settings = {ASSET_TAGS = (); }; };
+		237E25341BB53A05003C37D6 /* lj_bc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24AC1BB53A04003C37D6 /* lj_bc.h */; settings = {ASSET_TAGS = (); }; };
+		237E25351BB53A05003C37D6 /* lj_bcdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24AD1BB53A04003C37D6 /* lj_bcdef.h */; settings = {ASSET_TAGS = (); }; };
+		237E25361BB53A05003C37D6 /* lj_bcdump.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24AE1BB53A04003C37D6 /* lj_bcdump.h */; settings = {ASSET_TAGS = (); }; };
+		237E253A1BB53A05003C37D6 /* lj_carith.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24B21BB53A04003C37D6 /* lj_carith.h */; settings = {ASSET_TAGS = (); }; };
+		237E253C1BB53A05003C37D6 /* lj_ccall.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24B41BB53A04003C37D6 /* lj_ccall.h */; settings = {ASSET_TAGS = (); }; };
+		237E253E1BB53A05003C37D6 /* lj_ccallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24B61BB53A04003C37D6 /* lj_ccallback.h */; settings = {ASSET_TAGS = (); }; };
+		237E25401BB53A05003C37D6 /* lj_cconv.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24B81BB53A04003C37D6 /* lj_cconv.h */; settings = {ASSET_TAGS = (); }; };
+		237E25421BB53A05003C37D6 /* lj_cdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24BA1BB53A04003C37D6 /* lj_cdata.h */; settings = {ASSET_TAGS = (); }; };
+		237E25441BB53A05003C37D6 /* lj_char.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24BC1BB53A04003C37D6 /* lj_char.h */; settings = {ASSET_TAGS = (); }; };
+		237E25461BB53A05003C37D6 /* lj_clib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24BE1BB53A04003C37D6 /* lj_clib.h */; settings = {ASSET_TAGS = (); }; };
+		237E25481BB53A05003C37D6 /* lj_cparse.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C01BB53A04003C37D6 /* lj_cparse.h */; settings = {ASSET_TAGS = (); }; };
+		237E254A1BB53A05003C37D6 /* lj_crecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C21BB53A04003C37D6 /* lj_crecord.h */; settings = {ASSET_TAGS = (); }; };
+		237E254C1BB53A05003C37D6 /* lj_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C41BB53A04003C37D6 /* lj_ctype.h */; settings = {ASSET_TAGS = (); }; };
+		237E254E1BB53A05003C37D6 /* lj_debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C61BB53A04003C37D6 /* lj_debug.h */; settings = {ASSET_TAGS = (); }; };
+		237E254F1BB53A05003C37D6 /* lj_def.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C71BB53A04003C37D6 /* lj_def.h */; settings = {ASSET_TAGS = (); }; };
+		237E25511BB53A05003C37D6 /* lj_dispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C91BB53A04003C37D6 /* lj_dispatch.h */; settings = {ASSET_TAGS = (); }; };
+		237E25521BB53A05003C37D6 /* lj_emit_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CA1BB53A04003C37D6 /* lj_emit_arm.h */; settings = {ASSET_TAGS = (); }; };
+		237E25531BB53A05003C37D6 /* lj_emit_mips.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CB1BB53A04003C37D6 /* lj_emit_mips.h */; settings = {ASSET_TAGS = (); }; };
+		237E25541BB53A05003C37D6 /* lj_emit_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CC1BB53A04003C37D6 /* lj_emit_ppc.h */; settings = {ASSET_TAGS = (); }; };
+		237E25551BB53A05003C37D6 /* lj_emit_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CD1BB53A04003C37D6 /* lj_emit_x86.h */; settings = {ASSET_TAGS = (); }; };
+		237E25571BB53A05003C37D6 /* lj_err.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CF1BB53A04003C37D6 /* lj_err.h */; settings = {ASSET_TAGS = (); }; };
+		237E25581BB53A05003C37D6 /* lj_errmsg.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D01BB53A04003C37D6 /* lj_errmsg.h */; settings = {ASSET_TAGS = (); }; };
+		237E25591BB53A05003C37D6 /* lj_ff.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D11BB53A04003C37D6 /* lj_ff.h */; settings = {ASSET_TAGS = (); }; };
+		237E255A1BB53A05003C37D6 /* lj_ffdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D21BB53A04003C37D6 /* lj_ffdef.h */; settings = {ASSET_TAGS = (); }; };
+		237E255C1BB53A05003C37D6 /* lj_ffrecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D41BB53A04003C37D6 /* lj_ffrecord.h */; settings = {ASSET_TAGS = (); }; };
+		237E255D1BB53A05003C37D6 /* lj_folddef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D51BB53A04003C37D6 /* lj_folddef.h */; settings = {ASSET_TAGS = (); }; };
+		237E255E1BB53A05003C37D6 /* lj_frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D61BB53A04003C37D6 /* lj_frame.h */; settings = {ASSET_TAGS = (); }; };
+		237E25601BB53A05003C37D6 /* lj_func.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D81BB53A04003C37D6 /* lj_func.h */; settings = {ASSET_TAGS = (); }; };
+		237E25621BB53A05003C37D6 /* lj_gc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24DA1BB53A04003C37D6 /* lj_gc.h */; settings = {ASSET_TAGS = (); }; };
+		237E25641BB53A05003C37D6 /* lj_gdbjit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24DC1BB53A04003C37D6 /* lj_gdbjit.h */; settings = {ASSET_TAGS = (); }; };
+		237E25661BB53A05003C37D6 /* lj_ir.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24DE1BB53A04003C37D6 /* lj_ir.h */; settings = {ASSET_TAGS = (); }; };
+		237E25671BB53A05003C37D6 /* lj_ircall.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24DF1BB53A04003C37D6 /* lj_ircall.h */; settings = {ASSET_TAGS = (); }; };
+		237E25681BB53A05003C37D6 /* lj_iropt.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E01BB53A04003C37D6 /* lj_iropt.h */; settings = {ASSET_TAGS = (); }; };
+		237E25691BB53A05003C37D6 /* lj_jit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E11BB53A04003C37D6 /* lj_jit.h */; settings = {ASSET_TAGS = (); }; };
+		237E256B1BB53A05003C37D6 /* lj_lex.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E31BB53A04003C37D6 /* lj_lex.h */; settings = {ASSET_TAGS = (); }; };
+		237E256D1BB53A05003C37D6 /* lj_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E51BB53A04003C37D6 /* lj_lib.h */; settings = {ASSET_TAGS = (); }; };
+		237E256E1BB53A05003C37D6 /* lj_libdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E61BB53A04003C37D6 /* lj_libdef.h */; settings = {ASSET_TAGS = (); }; };
+		237E25711BB53A05003C37D6 /* lj_mcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E91BB53A04003C37D6 /* lj_mcode.h */; settings = {ASSET_TAGS = (); }; };
+		237E25731BB53A05003C37D6 /* lj_meta.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24EB1BB53A04003C37D6 /* lj_meta.h */; settings = {ASSET_TAGS = (); }; };
+		237E25751BB53A05003C37D6 /* lj_obj.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24ED1BB53A04003C37D6 /* lj_obj.h */; settings = {ASSET_TAGS = (); }; };
+		237E257E1BB53A05003C37D6 /* lj_parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24F61BB53A04003C37D6 /* lj_parse.h */; settings = {ASSET_TAGS = (); }; };
+		237E257F1BB53A05003C37D6 /* lj_recdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24F71BB53A04003C37D6 /* lj_recdef.h */; settings = {ASSET_TAGS = (); }; };
+		237E25811BB53A05003C37D6 /* lj_record.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24F91BB53A04003C37D6 /* lj_record.h */; settings = {ASSET_TAGS = (); }; };
+		237E25831BB53A05003C37D6 /* lj_snap.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24FB1BB53A04003C37D6 /* lj_snap.h */; settings = {ASSET_TAGS = (); }; };
+		237E25851BB53A05003C37D6 /* lj_state.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24FD1BB53A04003C37D6 /* lj_state.h */; settings = {ASSET_TAGS = (); }; };
+		237E25871BB53A05003C37D6 /* lj_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24FF1BB53A04003C37D6 /* lj_str.h */; settings = {ASSET_TAGS = (); }; };
+		237E25891BB53A05003C37D6 /* lj_strscan.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25011BB53A04003C37D6 /* lj_strscan.h */; settings = {ASSET_TAGS = (); }; };
+		237E258B1BB53A05003C37D6 /* lj_tab.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25031BB53A04003C37D6 /* lj_tab.h */; settings = {ASSET_TAGS = (); }; };
+		237E258C1BB53A05003C37D6 /* lj_target_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25041BB53A04003C37D6 /* lj_target_arm.h */; settings = {ASSET_TAGS = (); }; };
+		237E258D1BB53A05003C37D6 /* lj_target_mips.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25051BB53A04003C37D6 /* lj_target_mips.h */; settings = {ASSET_TAGS = (); }; };
+		237E258E1BB53A05003C37D6 /* lj_target_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25061BB53A04003C37D6 /* lj_target_ppc.h */; settings = {ASSET_TAGS = (); }; };
+		237E258F1BB53A05003C37D6 /* lj_target_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25071BB53A04003C37D6 /* lj_target_x86.h */; settings = {ASSET_TAGS = (); }; };
+		237E25901BB53A05003C37D6 /* lj_target.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25081BB53A04003C37D6 /* lj_target.h */; settings = {ASSET_TAGS = (); }; };
+		237E25921BB53A05003C37D6 /* lj_trace.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E250A1BB53A04003C37D6 /* lj_trace.h */; settings = {ASSET_TAGS = (); }; };
+		237E25931BB53A05003C37D6 /* lj_traceerr.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E250B1BB53A04003C37D6 /* lj_traceerr.h */; settings = {ASSET_TAGS = (); }; };
+		237E25951BB53A05003C37D6 /* lj_udata.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E250D1BB53A04003C37D6 /* lj_udata.h */; settings = {ASSET_TAGS = (); }; };
+		237E25961BB53A05003C37D6 /* lj_vm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E250E1BB53A04003C37D6 /* lj_vm.h */; settings = {ASSET_TAGS = (); }; };
+		237E25991BB53A05003C37D6 /* lj_vmevent.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25111BB53A05003C37D6 /* lj_vmevent.h */; settings = {ASSET_TAGS = (); }; };
+		237E259C1BB53A05003C37D6 /* lua.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25151BB53A05003C37D6 /* lua.h */; settings = {ASSET_TAGS = (); }; };
+		237E259D1BB53A05003C37D6 /* lua.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 237E25161BB53A05003C37D6 /* lua.hpp */; settings = {ASSET_TAGS = (); }; };
+		237E259E1BB53A05003C37D6 /* luaconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25171BB53A05003C37D6 /* luaconf.h */; settings = {ASSET_TAGS = (); }; };
+		237E25A01BB53A05003C37D6 /* luajit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25191BB53A05003C37D6 /* luajit.h */; settings = {ASSET_TAGS = (); }; };
+		237E25A11BB53A05003C37D6 /* lualib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E251A1BB53A05003C37D6 /* lualib.h */; settings = {ASSET_TAGS = (); }; };
+		237E25BA1BB53A9E003C37D6 /* dasm_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B51BB53A9E003C37D6 /* dasm_arm.h */; settings = {ASSET_TAGS = (); }; };
+		237E25BB1BB53A9E003C37D6 /* dasm_mips.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B61BB53A9E003C37D6 /* dasm_mips.h */; settings = {ASSET_TAGS = (); }; };
+		237E25BC1BB53A9E003C37D6 /* dasm_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B71BB53A9E003C37D6 /* dasm_ppc.h */; settings = {ASSET_TAGS = (); }; };
+		237E25BD1BB53A9E003C37D6 /* dasm_proto.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B81BB53A9E003C37D6 /* dasm_proto.h */; settings = {ASSET_TAGS = (); }; };
+		237E25BE1BB53A9E003C37D6 /* dasm_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B91BB53A9E003C37D6 /* dasm_x86.h */; settings = {ASSET_TAGS = (); }; };
+		237E26981BB5410C003C37D6 /* dasm_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B51BB53A9E003C37D6 /* dasm_arm.h */; };
+		237E26991BB5410C003C37D6 /* dasm_mips.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B61BB53A9E003C37D6 /* dasm_mips.h */; };
+		237E269A1BB5410C003C37D6 /* dasm_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B71BB53A9E003C37D6 /* dasm_ppc.h */; };
+		237E269B1BB5410C003C37D6 /* dasm_proto.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B81BB53A9E003C37D6 /* dasm_proto.h */; };
+		237E269C1BB5410C003C37D6 /* dasm_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25B91BB53A9E003C37D6 /* dasm_x86.h */; };
+		237E269D1BB5410C003C37D6 /* lauxlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24931BB53A04003C37D6 /* lauxlib.h */; };
+		237E269E1BB5410D003C37D6 /* lj_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A21BB53A04003C37D6 /* lj_alloc.h */; };
+		237E269F1BB5410D003C37D6 /* lj_arch.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A41BB53A04003C37D6 /* lj_arch.h */; };
+		237E26A01BB5410D003C37D6 /* lj_asm_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A51BB53A04003C37D6 /* lj_asm_arm.h */; };
+		237E26A11BB5410D003C37D6 /* lj_asm_mips.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A61BB53A04003C37D6 /* lj_asm_mips.h */; };
+		237E26A21BB5410D003C37D6 /* lj_asm_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A71BB53A04003C37D6 /* lj_asm_ppc.h */; };
+		237E26A31BB5410D003C37D6 /* lj_asm_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A81BB53A04003C37D6 /* lj_asm_x86.h */; };
+		237E26A41BB5410D003C37D6 /* lj_asm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24AA1BB53A04003C37D6 /* lj_asm.h */; };
+		237E26A51BB5410D003C37D6 /* lj_bc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24AC1BB53A04003C37D6 /* lj_bc.h */; };
+		237E26A61BB5410D003C37D6 /* lj_bcdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24AD1BB53A04003C37D6 /* lj_bcdef.h */; };
+		237E26A71BB5410D003C37D6 /* lj_bcdump.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24AE1BB53A04003C37D6 /* lj_bcdump.h */; };
+		237E26A81BB5410D003C37D6 /* lj_carith.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24B21BB53A04003C37D6 /* lj_carith.h */; };
+		237E26A91BB5410D003C37D6 /* lj_ccall.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24B41BB53A04003C37D6 /* lj_ccall.h */; };
+		237E26AA1BB5410D003C37D6 /* lj_ccallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24B61BB53A04003C37D6 /* lj_ccallback.h */; };
+		237E26AB1BB5410D003C37D6 /* lj_cconv.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24B81BB53A04003C37D6 /* lj_cconv.h */; };
+		237E26AC1BB5410D003C37D6 /* lj_cdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24BA1BB53A04003C37D6 /* lj_cdata.h */; };
+		237E26AD1BB5410E003C37D6 /* lj_char.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24BC1BB53A04003C37D6 /* lj_char.h */; };
+		237E26AE1BB5410E003C37D6 /* lj_clib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24BE1BB53A04003C37D6 /* lj_clib.h */; };
+		237E26AF1BB5410E003C37D6 /* lj_cparse.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C01BB53A04003C37D6 /* lj_cparse.h */; };
+		237E26B01BB5410E003C37D6 /* lj_crecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C21BB53A04003C37D6 /* lj_crecord.h */; };
+		237E26B11BB5410E003C37D6 /* lj_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C41BB53A04003C37D6 /* lj_ctype.h */; };
+		237E26B21BB5410E003C37D6 /* lj_debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C61BB53A04003C37D6 /* lj_debug.h */; };
+		237E26B31BB5410E003C37D6 /* lj_def.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C71BB53A04003C37D6 /* lj_def.h */; };
+		237E26B41BB5410E003C37D6 /* lj_dispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24C91BB53A04003C37D6 /* lj_dispatch.h */; };
+		237E26B51BB5410E003C37D6 /* lj_emit_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CA1BB53A04003C37D6 /* lj_emit_arm.h */; };
+		237E26B61BB5410E003C37D6 /* lj_emit_mips.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CB1BB53A04003C37D6 /* lj_emit_mips.h */; };
+		237E26B71BB5410E003C37D6 /* lj_emit_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CC1BB53A04003C37D6 /* lj_emit_ppc.h */; };
+		237E26B81BB5410F003C37D6 /* lj_emit_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CD1BB53A04003C37D6 /* lj_emit_x86.h */; };
+		237E26B91BB5410F003C37D6 /* lj_err.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24CF1BB53A04003C37D6 /* lj_err.h */; };
+		237E26BA1BB5410F003C37D6 /* lj_errmsg.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D01BB53A04003C37D6 /* lj_errmsg.h */; };
+		237E26BB1BB5410F003C37D6 /* lj_ff.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D11BB53A04003C37D6 /* lj_ff.h */; };
+		237E26BC1BB5410F003C37D6 /* lj_ffdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D21BB53A04003C37D6 /* lj_ffdef.h */; };
+		237E26BD1BB5410F003C37D6 /* lj_ffrecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D41BB53A04003C37D6 /* lj_ffrecord.h */; };
+		237E26BE1BB5410F003C37D6 /* lj_folddef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D51BB53A04003C37D6 /* lj_folddef.h */; };
+		237E26BF1BB5410F003C37D6 /* lj_frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D61BB53A04003C37D6 /* lj_frame.h */; };
+		237E26C01BB5410F003C37D6 /* lj_func.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24D81BB53A04003C37D6 /* lj_func.h */; };
+		237E26C11BB5410F003C37D6 /* lj_gc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24DA1BB53A04003C37D6 /* lj_gc.h */; };
+		237E26C21BB54110003C37D6 /* lj_gdbjit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24DC1BB53A04003C37D6 /* lj_gdbjit.h */; };
+		237E26C31BB54110003C37D6 /* lj_ir.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24DE1BB53A04003C37D6 /* lj_ir.h */; };
+		237E26C41BB54110003C37D6 /* lj_ircall.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24DF1BB53A04003C37D6 /* lj_ircall.h */; };
+		237E26C51BB54110003C37D6 /* lj_iropt.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E01BB53A04003C37D6 /* lj_iropt.h */; };
+		237E26C61BB54110003C37D6 /* lj_jit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E11BB53A04003C37D6 /* lj_jit.h */; };
+		237E26C71BB54110003C37D6 /* lj_lex.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E31BB53A04003C37D6 /* lj_lex.h */; };
+		237E26C81BB54110003C37D6 /* lj_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E51BB53A04003C37D6 /* lj_lib.h */; };
+		237E26C91BB54110003C37D6 /* lj_libdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E61BB53A04003C37D6 /* lj_libdef.h */; };
+		237E26CA1BB54111003C37D6 /* lj_mcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24E91BB53A04003C37D6 /* lj_mcode.h */; };
+		237E26CB1BB54111003C37D6 /* lj_meta.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24EB1BB53A04003C37D6 /* lj_meta.h */; };
+		237E26CC1BB54111003C37D6 /* lj_obj.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24ED1BB53A04003C37D6 /* lj_obj.h */; };
+		237E26CD1BB54111003C37D6 /* lj_parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24F61BB53A04003C37D6 /* lj_parse.h */; };
+		237E26CE1BB54111003C37D6 /* lj_recdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24F71BB53A04003C37D6 /* lj_recdef.h */; };
+		237E26CF1BB54111003C37D6 /* lj_record.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24F91BB53A04003C37D6 /* lj_record.h */; };
+		237E26D01BB54111003C37D6 /* lj_snap.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24FB1BB53A04003C37D6 /* lj_snap.h */; };
+		237E26D11BB54112003C37D6 /* lj_state.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24FD1BB53A04003C37D6 /* lj_state.h */; };
+		237E26D21BB54112003C37D6 /* lj_str.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24FF1BB53A04003C37D6 /* lj_str.h */; };
+		237E26D31BB54112003C37D6 /* lj_strscan.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25011BB53A04003C37D6 /* lj_strscan.h */; };
+		237E26D41BB54112003C37D6 /* lj_tab.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25031BB53A04003C37D6 /* lj_tab.h */; };
+		237E26D51BB54112003C37D6 /* lj_target_arm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25041BB53A04003C37D6 /* lj_target_arm.h */; };
+		237E26D61BB54112003C37D6 /* lj_target_mips.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25051BB53A04003C37D6 /* lj_target_mips.h */; };
+		237E26D71BB54112003C37D6 /* lj_target_ppc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25061BB53A04003C37D6 /* lj_target_ppc.h */; };
+		237E26D81BB54113003C37D6 /* lj_target_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25071BB53A04003C37D6 /* lj_target_x86.h */; };
+		237E26D91BB54113003C37D6 /* lj_target.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25081BB53A04003C37D6 /* lj_target.h */; };
+		237E26DA1BB54113003C37D6 /* lj_trace.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E250A1BB53A04003C37D6 /* lj_trace.h */; };
+		237E26DB1BB54113003C37D6 /* lj_traceerr.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E250B1BB53A04003C37D6 /* lj_traceerr.h */; };
+		237E26DC1BB54113003C37D6 /* lj_udata.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E250D1BB53A04003C37D6 /* lj_udata.h */; };
+		237E26DD1BB54113003C37D6 /* lj_vm.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E250E1BB53A04003C37D6 /* lj_vm.h */; };
+		237E26DE1BB54114003C37D6 /* lj_vmevent.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25111BB53A05003C37D6 /* lj_vmevent.h */; };
+		237E26DF1BB54114003C37D6 /* lua.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25151BB53A05003C37D6 /* lua.h */; };
+		237E26E01BB54114003C37D6 /* luaconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25171BB53A05003C37D6 /* luaconf.h */; };
+		237E26E11BB54114003C37D6 /* luajit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25191BB53A05003C37D6 /* luajit.h */; };
+		237E26E21BB54114003C37D6 /* lualib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E251A1BB53A05003C37D6 /* lualib.h */; };
+		237E26F31BB54239003C37D6 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 237E26E41BB541A0003C37D6 /* test.c */; };
+		23F6CF3A1BB54CD90066808C /* ljamalg.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F6CF381BB54C810066808C /* ljamalg.c */; };
+		23F6CF3B1BB54CE80066808C /* ljamalg.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F6CF381BB54C810066808C /* ljamalg.c */; };
+		23F6CF3C1BB54D580066808C /* lj_vm.s in Sources */ = {isa = PBXBuildFile; fileRef = 237E250F1BB53A05003C37D6 /* lj_vm.s */; };
+		23F6CF3D1BB54D610066808C /* lj_vm.s in Sources */ = {isa = PBXBuildFile; fileRef = 237E250F1BB53A05003C37D6 /* lj_vm.s */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2365F7F91BB9178800D713F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 237E24831BB53942003C37D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 237E248A1BB53942003C37D6;
+			remoteInfo = luajit;
+		};
+		2365F7FB1BB9178800D713F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 237E24831BB53942003C37D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 237E26561BB54092003C37D6;
+			remoteInfo = "luajit-static";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		237E26E81BB541F1003C37D6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2365F7F11BB9171400D713F1 /* luajit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = luajit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		237E248B1BB53942003C37D6 /* libluajit.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libluajit.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		237E24931BB53A04003C37D6 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lauxlib.h; path = ../src/lauxlib.h; sourceTree = "<group>"; };
+		237E24941BB53A04003C37D6 /* lib_aux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_aux.c; path = ../src/lib_aux.c; sourceTree = "<group>"; };
+		237E24951BB53A04003C37D6 /* lib_base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_base.c; path = ../src/lib_base.c; sourceTree = "<group>"; };
+		237E24961BB53A04003C37D6 /* lib_bit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_bit.c; path = ../src/lib_bit.c; sourceTree = "<group>"; };
+		237E24971BB53A04003C37D6 /* lib_debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_debug.c; path = ../src/lib_debug.c; sourceTree = "<group>"; };
+		237E24981BB53A04003C37D6 /* lib_ffi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_ffi.c; path = ../src/lib_ffi.c; sourceTree = "<group>"; };
+		237E24991BB53A04003C37D6 /* lib_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_init.c; path = ../src/lib_init.c; sourceTree = "<group>"; };
+		237E249A1BB53A04003C37D6 /* lib_io.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_io.c; path = ../src/lib_io.c; sourceTree = "<group>"; };
+		237E249B1BB53A04003C37D6 /* lib_jit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_jit.c; path = ../src/lib_jit.c; sourceTree = "<group>"; };
+		237E249C1BB53A04003C37D6 /* lib_math.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_math.c; path = ../src/lib_math.c; sourceTree = "<group>"; };
+		237E249D1BB53A04003C37D6 /* lib_os.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_os.c; path = ../src/lib_os.c; sourceTree = "<group>"; };
+		237E249E1BB53A04003C37D6 /* lib_package.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_package.c; path = ../src/lib_package.c; sourceTree = "<group>"; };
+		237E249F1BB53A04003C37D6 /* lib_string.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_string.c; path = ../src/lib_string.c; sourceTree = "<group>"; };
+		237E24A01BB53A04003C37D6 /* lib_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lib_table.c; path = ../src/lib_table.c; sourceTree = "<group>"; };
+		237E24A11BB53A04003C37D6 /* lj_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_alloc.c; path = ../src/lj_alloc.c; sourceTree = "<group>"; };
+		237E24A21BB53A04003C37D6 /* lj_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_alloc.h; path = ../src/lj_alloc.h; sourceTree = "<group>"; };
+		237E24A31BB53A04003C37D6 /* lj_api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_api.c; path = ../src/lj_api.c; sourceTree = "<group>"; };
+		237E24A41BB53A04003C37D6 /* lj_arch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_arch.h; path = ../src/lj_arch.h; sourceTree = "<group>"; };
+		237E24A51BB53A04003C37D6 /* lj_asm_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_asm_arm.h; path = ../src/lj_asm_arm.h; sourceTree = "<group>"; };
+		237E24A61BB53A04003C37D6 /* lj_asm_mips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_asm_mips.h; path = ../src/lj_asm_mips.h; sourceTree = "<group>"; };
+		237E24A71BB53A04003C37D6 /* lj_asm_ppc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_asm_ppc.h; path = ../src/lj_asm_ppc.h; sourceTree = "<group>"; };
+		237E24A81BB53A04003C37D6 /* lj_asm_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_asm_x86.h; path = ../src/lj_asm_x86.h; sourceTree = "<group>"; };
+		237E24A91BB53A04003C37D6 /* lj_asm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_asm.c; path = ../src/lj_asm.c; sourceTree = "<group>"; };
+		237E24AA1BB53A04003C37D6 /* lj_asm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_asm.h; path = ../src/lj_asm.h; sourceTree = "<group>"; };
+		237E24AB1BB53A04003C37D6 /* lj_bc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_bc.c; path = ../src/lj_bc.c; sourceTree = "<group>"; };
+		237E24AC1BB53A04003C37D6 /* lj_bc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_bc.h; path = ../src/lj_bc.h; sourceTree = "<group>"; };
+		237E24AD1BB53A04003C37D6 /* lj_bcdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_bcdef.h; path = ../src/lj_bcdef.h; sourceTree = "<group>"; };
+		237E24AE1BB53A04003C37D6 /* lj_bcdump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_bcdump.h; path = ../src/lj_bcdump.h; sourceTree = "<group>"; };
+		237E24AF1BB53A04003C37D6 /* lj_bcread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_bcread.c; path = ../src/lj_bcread.c; sourceTree = "<group>"; };
+		237E24B01BB53A04003C37D6 /* lj_bcwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_bcwrite.c; path = ../src/lj_bcwrite.c; sourceTree = "<group>"; };
+		237E24B11BB53A04003C37D6 /* lj_carith.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_carith.c; path = ../src/lj_carith.c; sourceTree = "<group>"; };
+		237E24B21BB53A04003C37D6 /* lj_carith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_carith.h; path = ../src/lj_carith.h; sourceTree = "<group>"; };
+		237E24B31BB53A04003C37D6 /* lj_ccall.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_ccall.c; path = ../src/lj_ccall.c; sourceTree = "<group>"; };
+		237E24B41BB53A04003C37D6 /* lj_ccall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_ccall.h; path = ../src/lj_ccall.h; sourceTree = "<group>"; };
+		237E24B51BB53A04003C37D6 /* lj_ccallback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_ccallback.c; path = ../src/lj_ccallback.c; sourceTree = "<group>"; };
+		237E24B61BB53A04003C37D6 /* lj_ccallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_ccallback.h; path = ../src/lj_ccallback.h; sourceTree = "<group>"; };
+		237E24B71BB53A04003C37D6 /* lj_cconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_cconv.c; path = ../src/lj_cconv.c; sourceTree = "<group>"; };
+		237E24B81BB53A04003C37D6 /* lj_cconv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_cconv.h; path = ../src/lj_cconv.h; sourceTree = "<group>"; };
+		237E24B91BB53A04003C37D6 /* lj_cdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_cdata.c; path = ../src/lj_cdata.c; sourceTree = "<group>"; };
+		237E24BA1BB53A04003C37D6 /* lj_cdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_cdata.h; path = ../src/lj_cdata.h; sourceTree = "<group>"; };
+		237E24BB1BB53A04003C37D6 /* lj_char.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_char.c; path = ../src/lj_char.c; sourceTree = "<group>"; };
+		237E24BC1BB53A04003C37D6 /* lj_char.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_char.h; path = ../src/lj_char.h; sourceTree = "<group>"; };
+		237E24BD1BB53A04003C37D6 /* lj_clib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_clib.c; path = ../src/lj_clib.c; sourceTree = "<group>"; };
+		237E24BE1BB53A04003C37D6 /* lj_clib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_clib.h; path = ../src/lj_clib.h; sourceTree = "<group>"; };
+		237E24BF1BB53A04003C37D6 /* lj_cparse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_cparse.c; path = ../src/lj_cparse.c; sourceTree = "<group>"; };
+		237E24C01BB53A04003C37D6 /* lj_cparse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_cparse.h; path = ../src/lj_cparse.h; sourceTree = "<group>"; };
+		237E24C11BB53A04003C37D6 /* lj_crecord.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_crecord.c; path = ../src/lj_crecord.c; sourceTree = "<group>"; };
+		237E24C21BB53A04003C37D6 /* lj_crecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_crecord.h; path = ../src/lj_crecord.h; sourceTree = "<group>"; };
+		237E24C31BB53A04003C37D6 /* lj_ctype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_ctype.c; path = ../src/lj_ctype.c; sourceTree = "<group>"; };
+		237E24C41BB53A04003C37D6 /* lj_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_ctype.h; path = ../src/lj_ctype.h; sourceTree = "<group>"; };
+		237E24C51BB53A04003C37D6 /* lj_debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_debug.c; path = ../src/lj_debug.c; sourceTree = "<group>"; };
+		237E24C61BB53A04003C37D6 /* lj_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_debug.h; path = ../src/lj_debug.h; sourceTree = "<group>"; };
+		237E24C71BB53A04003C37D6 /* lj_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_def.h; path = ../src/lj_def.h; sourceTree = "<group>"; };
+		237E24C81BB53A04003C37D6 /* lj_dispatch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_dispatch.c; path = ../src/lj_dispatch.c; sourceTree = "<group>"; };
+		237E24C91BB53A04003C37D6 /* lj_dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_dispatch.h; path = ../src/lj_dispatch.h; sourceTree = "<group>"; };
+		237E24CA1BB53A04003C37D6 /* lj_emit_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_emit_arm.h; path = ../src/lj_emit_arm.h; sourceTree = "<group>"; };
+		237E24CB1BB53A04003C37D6 /* lj_emit_mips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_emit_mips.h; path = ../src/lj_emit_mips.h; sourceTree = "<group>"; };
+		237E24CC1BB53A04003C37D6 /* lj_emit_ppc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_emit_ppc.h; path = ../src/lj_emit_ppc.h; sourceTree = "<group>"; };
+		237E24CD1BB53A04003C37D6 /* lj_emit_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_emit_x86.h; path = ../src/lj_emit_x86.h; sourceTree = "<group>"; };
+		237E24CE1BB53A04003C37D6 /* lj_err.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_err.c; path = ../src/lj_err.c; sourceTree = "<group>"; };
+		237E24CF1BB53A04003C37D6 /* lj_err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_err.h; path = ../src/lj_err.h; sourceTree = "<group>"; };
+		237E24D01BB53A04003C37D6 /* lj_errmsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_errmsg.h; path = ../src/lj_errmsg.h; sourceTree = "<group>"; };
+		237E24D11BB53A04003C37D6 /* lj_ff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_ff.h; path = ../src/lj_ff.h; sourceTree = "<group>"; };
+		237E24D21BB53A04003C37D6 /* lj_ffdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_ffdef.h; path = ../src/lj_ffdef.h; sourceTree = "<group>"; };
+		237E24D31BB53A04003C37D6 /* lj_ffrecord.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_ffrecord.c; path = ../src/lj_ffrecord.c; sourceTree = "<group>"; };
+		237E24D41BB53A04003C37D6 /* lj_ffrecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_ffrecord.h; path = ../src/lj_ffrecord.h; sourceTree = "<group>"; };
+		237E24D51BB53A04003C37D6 /* lj_folddef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_folddef.h; path = ../src/lj_folddef.h; sourceTree = "<group>"; };
+		237E24D61BB53A04003C37D6 /* lj_frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_frame.h; path = ../src/lj_frame.h; sourceTree = "<group>"; };
+		237E24D71BB53A04003C37D6 /* lj_func.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_func.c; path = ../src/lj_func.c; sourceTree = "<group>"; };
+		237E24D81BB53A04003C37D6 /* lj_func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_func.h; path = ../src/lj_func.h; sourceTree = "<group>"; };
+		237E24D91BB53A04003C37D6 /* lj_gc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_gc.c; path = ../src/lj_gc.c; sourceTree = "<group>"; };
+		237E24DA1BB53A04003C37D6 /* lj_gc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_gc.h; path = ../src/lj_gc.h; sourceTree = "<group>"; };
+		237E24DB1BB53A04003C37D6 /* lj_gdbjit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_gdbjit.c; path = ../src/lj_gdbjit.c; sourceTree = "<group>"; };
+		237E24DC1BB53A04003C37D6 /* lj_gdbjit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_gdbjit.h; path = ../src/lj_gdbjit.h; sourceTree = "<group>"; };
+		237E24DD1BB53A04003C37D6 /* lj_ir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_ir.c; path = ../src/lj_ir.c; sourceTree = "<group>"; };
+		237E24DE1BB53A04003C37D6 /* lj_ir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_ir.h; path = ../src/lj_ir.h; sourceTree = "<group>"; };
+		237E24DF1BB53A04003C37D6 /* lj_ircall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_ircall.h; path = ../src/lj_ircall.h; sourceTree = "<group>"; };
+		237E24E01BB53A04003C37D6 /* lj_iropt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_iropt.h; path = ../src/lj_iropt.h; sourceTree = "<group>"; };
+		237E24E11BB53A04003C37D6 /* lj_jit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_jit.h; path = ../src/lj_jit.h; sourceTree = "<group>"; };
+		237E24E21BB53A04003C37D6 /* lj_lex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_lex.c; path = ../src/lj_lex.c; sourceTree = "<group>"; };
+		237E24E31BB53A04003C37D6 /* lj_lex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_lex.h; path = ../src/lj_lex.h; sourceTree = "<group>"; };
+		237E24E41BB53A04003C37D6 /* lj_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_lib.c; path = ../src/lj_lib.c; sourceTree = "<group>"; };
+		237E24E51BB53A04003C37D6 /* lj_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_lib.h; path = ../src/lj_lib.h; sourceTree = "<group>"; };
+		237E24E61BB53A04003C37D6 /* lj_libdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_libdef.h; path = ../src/lj_libdef.h; sourceTree = "<group>"; };
+		237E24E71BB53A04003C37D6 /* lj_load.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_load.c; path = ../src/lj_load.c; sourceTree = "<group>"; };
+		237E24E81BB53A04003C37D6 /* lj_mcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_mcode.c; path = ../src/lj_mcode.c; sourceTree = "<group>"; };
+		237E24E91BB53A04003C37D6 /* lj_mcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_mcode.h; path = ../src/lj_mcode.h; sourceTree = "<group>"; };
+		237E24EA1BB53A04003C37D6 /* lj_meta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_meta.c; path = ../src/lj_meta.c; sourceTree = "<group>"; };
+		237E24EB1BB53A04003C37D6 /* lj_meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_meta.h; path = ../src/lj_meta.h; sourceTree = "<group>"; };
+		237E24EC1BB53A04003C37D6 /* lj_obj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_obj.c; path = ../src/lj_obj.c; sourceTree = "<group>"; };
+		237E24ED1BB53A04003C37D6 /* lj_obj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_obj.h; path = ../src/lj_obj.h; sourceTree = "<group>"; };
+		237E24EE1BB53A04003C37D6 /* lj_opt_dce.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_opt_dce.c; path = ../src/lj_opt_dce.c; sourceTree = "<group>"; };
+		237E24EF1BB53A04003C37D6 /* lj_opt_fold.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_opt_fold.c; path = ../src/lj_opt_fold.c; sourceTree = "<group>"; };
+		237E24F01BB53A04003C37D6 /* lj_opt_loop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_opt_loop.c; path = ../src/lj_opt_loop.c; sourceTree = "<group>"; };
+		237E24F11BB53A04003C37D6 /* lj_opt_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_opt_mem.c; path = ../src/lj_opt_mem.c; sourceTree = "<group>"; };
+		237E24F21BB53A04003C37D6 /* lj_opt_narrow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_opt_narrow.c; path = ../src/lj_opt_narrow.c; sourceTree = "<group>"; };
+		237E24F31BB53A04003C37D6 /* lj_opt_sink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_opt_sink.c; path = ../src/lj_opt_sink.c; sourceTree = "<group>"; };
+		237E24F41BB53A04003C37D6 /* lj_opt_split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_opt_split.c; path = ../src/lj_opt_split.c; sourceTree = "<group>"; };
+		237E24F51BB53A04003C37D6 /* lj_parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_parse.c; path = ../src/lj_parse.c; sourceTree = "<group>"; };
+		237E24F61BB53A04003C37D6 /* lj_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_parse.h; path = ../src/lj_parse.h; sourceTree = "<group>"; };
+		237E24F71BB53A04003C37D6 /* lj_recdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_recdef.h; path = ../src/lj_recdef.h; sourceTree = "<group>"; };
+		237E24F81BB53A04003C37D6 /* lj_record.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_record.c; path = ../src/lj_record.c; sourceTree = "<group>"; };
+		237E24F91BB53A04003C37D6 /* lj_record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_record.h; path = ../src/lj_record.h; sourceTree = "<group>"; };
+		237E24FA1BB53A04003C37D6 /* lj_snap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_snap.c; path = ../src/lj_snap.c; sourceTree = "<group>"; };
+		237E24FB1BB53A04003C37D6 /* lj_snap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_snap.h; path = ../src/lj_snap.h; sourceTree = "<group>"; };
+		237E24FC1BB53A04003C37D6 /* lj_state.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_state.c; path = ../src/lj_state.c; sourceTree = "<group>"; };
+		237E24FD1BB53A04003C37D6 /* lj_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_state.h; path = ../src/lj_state.h; sourceTree = "<group>"; };
+		237E24FE1BB53A04003C37D6 /* lj_str.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_str.c; path = ../src/lj_str.c; sourceTree = "<group>"; };
+		237E24FF1BB53A04003C37D6 /* lj_str.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_str.h; path = ../src/lj_str.h; sourceTree = "<group>"; };
+		237E25001BB53A04003C37D6 /* lj_strscan.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_strscan.c; path = ../src/lj_strscan.c; sourceTree = "<group>"; };
+		237E25011BB53A04003C37D6 /* lj_strscan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_strscan.h; path = ../src/lj_strscan.h; sourceTree = "<group>"; };
+		237E25021BB53A04003C37D6 /* lj_tab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_tab.c; path = ../src/lj_tab.c; sourceTree = "<group>"; };
+		237E25031BB53A04003C37D6 /* lj_tab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_tab.h; path = ../src/lj_tab.h; sourceTree = "<group>"; };
+		237E25041BB53A04003C37D6 /* lj_target_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_target_arm.h; path = ../src/lj_target_arm.h; sourceTree = "<group>"; };
+		237E25051BB53A04003C37D6 /* lj_target_mips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_target_mips.h; path = ../src/lj_target_mips.h; sourceTree = "<group>"; };
+		237E25061BB53A04003C37D6 /* lj_target_ppc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_target_ppc.h; path = ../src/lj_target_ppc.h; sourceTree = "<group>"; };
+		237E25071BB53A04003C37D6 /* lj_target_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_target_x86.h; path = ../src/lj_target_x86.h; sourceTree = "<group>"; };
+		237E25081BB53A04003C37D6 /* lj_target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_target.h; path = ../src/lj_target.h; sourceTree = "<group>"; };
+		237E25091BB53A04003C37D6 /* lj_trace.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_trace.c; path = ../src/lj_trace.c; sourceTree = "<group>"; };
+		237E250A1BB53A04003C37D6 /* lj_trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_trace.h; path = ../src/lj_trace.h; sourceTree = "<group>"; };
+		237E250B1BB53A04003C37D6 /* lj_traceerr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_traceerr.h; path = ../src/lj_traceerr.h; sourceTree = "<group>"; };
+		237E250C1BB53A04003C37D6 /* lj_udata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_udata.c; path = ../src/lj_udata.c; sourceTree = "<group>"; };
+		237E250D1BB53A04003C37D6 /* lj_udata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_udata.h; path = ../src/lj_udata.h; sourceTree = "<group>"; };
+		237E250E1BB53A04003C37D6 /* lj_vm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_vm.h; path = ../src/lj_vm.h; sourceTree = "<group>"; };
+		237E250F1BB53A05003C37D6 /* lj_vm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = lj_vm.s; path = ../src/lj_vm.s; sourceTree = "<group>"; };
+		237E25101BB53A05003C37D6 /* lj_vmevent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_vmevent.c; path = ../src/lj_vmevent.c; sourceTree = "<group>"; };
+		237E25111BB53A05003C37D6 /* lj_vmevent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lj_vmevent.h; path = ../src/lj_vmevent.h; sourceTree = "<group>"; };
+		237E25121BB53A05003C37D6 /* lj_vmmath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lj_vmmath.c; path = ../src/lj_vmmath.c; sourceTree = "<group>"; };
+		237E25131BB53A05003C37D6 /* lj.supp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lj.supp; path = ../src/lj.supp; sourceTree = "<group>"; };
+		237E25151BB53A05003C37D6 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lua.h; path = ../src/lua.h; sourceTree = "<group>"; };
+		237E25161BB53A05003C37D6 /* lua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = lua.hpp; path = ../src/lua.hpp; sourceTree = "<group>"; };
+		237E25171BB53A05003C37D6 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = luaconf.h; path = ../src/luaconf.h; sourceTree = "<group>"; };
+		237E25191BB53A05003C37D6 /* luajit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = luajit.h; path = ../src/luajit.h; sourceTree = "<group>"; };
+		237E251A1BB53A05003C37D6 /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lualib.h; path = ../src/lualib.h; sourceTree = "<group>"; };
+		237E25B51BB53A9E003C37D6 /* dasm_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dasm_arm.h; path = ../dynasm/dasm_arm.h; sourceTree = "<group>"; };
+		237E25B61BB53A9E003C37D6 /* dasm_mips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dasm_mips.h; path = ../dynasm/dasm_mips.h; sourceTree = "<group>"; };
+		237E25B71BB53A9E003C37D6 /* dasm_ppc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dasm_ppc.h; path = ../dynasm/dasm_ppc.h; sourceTree = "<group>"; };
+		237E25B81BB53A9E003C37D6 /* dasm_proto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dasm_proto.h; path = ../dynasm/dasm_proto.h; sourceTree = "<group>"; };
+		237E25B91BB53A9E003C37D6 /* dasm_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dasm_x86.h; path = ../dynasm/dasm_x86.h; sourceTree = "<group>"; };
+		237E26571BB54092003C37D6 /* libluajit-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libluajit-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		237E26E41BB541A0003C37D6 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = test.c; path = ../test/test.c; sourceTree = "<group>"; };
+		237E26EA1BB541F1003C37D6 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F6CF381BB54C810066808C /* ljamalg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ljamalg.c; path = ../src/ljamalg.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2365F7ED1BB9171400D713F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237E24881BB53942003C37D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237E26541BB54092003C37D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237E26E71BB541F1003C37D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2365F7EB1BB916CB00D713F1 /* libluajit.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		237E24821BB53942003C37D6 = {
+			isa = PBXGroup;
+			children = (
+				237E26E31BB54145003C37D6 /* Tests */,
+				237E25B41BB53A89003C37D6 /* DYNAsm */,
+				237E24921BB539D3003C37D6 /* Sources */,
+				237E248C1BB53942003C37D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		237E248C1BB53942003C37D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				237E248B1BB53942003C37D6 /* libluajit.dylib */,
+				237E26571BB54092003C37D6 /* libluajit-static.a */,
+				237E26EA1BB541F1003C37D6 /* test */,
+				2365F7F11BB9171400D713F1 /* luajit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		237E24921BB539D3003C37D6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				23F6CF381BB54C810066808C /* ljamalg.c */,
+				237E24931BB53A04003C37D6 /* lauxlib.h */,
+				237E24941BB53A04003C37D6 /* lib_aux.c */,
+				237E24951BB53A04003C37D6 /* lib_base.c */,
+				237E24961BB53A04003C37D6 /* lib_bit.c */,
+				237E24971BB53A04003C37D6 /* lib_debug.c */,
+				237E24981BB53A04003C37D6 /* lib_ffi.c */,
+				237E24991BB53A04003C37D6 /* lib_init.c */,
+				237E249A1BB53A04003C37D6 /* lib_io.c */,
+				237E249B1BB53A04003C37D6 /* lib_jit.c */,
+				237E249C1BB53A04003C37D6 /* lib_math.c */,
+				237E249D1BB53A04003C37D6 /* lib_os.c */,
+				237E249E1BB53A04003C37D6 /* lib_package.c */,
+				237E249F1BB53A04003C37D6 /* lib_string.c */,
+				237E24A01BB53A04003C37D6 /* lib_table.c */,
+				237E24A11BB53A04003C37D6 /* lj_alloc.c */,
+				237E24A21BB53A04003C37D6 /* lj_alloc.h */,
+				237E24A31BB53A04003C37D6 /* lj_api.c */,
+				237E24A41BB53A04003C37D6 /* lj_arch.h */,
+				237E24A51BB53A04003C37D6 /* lj_asm_arm.h */,
+				237E24A61BB53A04003C37D6 /* lj_asm_mips.h */,
+				237E24A71BB53A04003C37D6 /* lj_asm_ppc.h */,
+				237E24A81BB53A04003C37D6 /* lj_asm_x86.h */,
+				237E24A91BB53A04003C37D6 /* lj_asm.c */,
+				237E24AA1BB53A04003C37D6 /* lj_asm.h */,
+				237E24AB1BB53A04003C37D6 /* lj_bc.c */,
+				237E24AC1BB53A04003C37D6 /* lj_bc.h */,
+				237E24AD1BB53A04003C37D6 /* lj_bcdef.h */,
+				237E24AE1BB53A04003C37D6 /* lj_bcdump.h */,
+				237E24AF1BB53A04003C37D6 /* lj_bcread.c */,
+				237E24B01BB53A04003C37D6 /* lj_bcwrite.c */,
+				237E24B11BB53A04003C37D6 /* lj_carith.c */,
+				237E24B21BB53A04003C37D6 /* lj_carith.h */,
+				237E24B31BB53A04003C37D6 /* lj_ccall.c */,
+				237E24B41BB53A04003C37D6 /* lj_ccall.h */,
+				237E24B51BB53A04003C37D6 /* lj_ccallback.c */,
+				237E24B61BB53A04003C37D6 /* lj_ccallback.h */,
+				237E24B71BB53A04003C37D6 /* lj_cconv.c */,
+				237E24B81BB53A04003C37D6 /* lj_cconv.h */,
+				237E24B91BB53A04003C37D6 /* lj_cdata.c */,
+				237E24BA1BB53A04003C37D6 /* lj_cdata.h */,
+				237E24BB1BB53A04003C37D6 /* lj_char.c */,
+				237E24BC1BB53A04003C37D6 /* lj_char.h */,
+				237E24BD1BB53A04003C37D6 /* lj_clib.c */,
+				237E24BE1BB53A04003C37D6 /* lj_clib.h */,
+				237E24BF1BB53A04003C37D6 /* lj_cparse.c */,
+				237E24C01BB53A04003C37D6 /* lj_cparse.h */,
+				237E24C11BB53A04003C37D6 /* lj_crecord.c */,
+				237E24C21BB53A04003C37D6 /* lj_crecord.h */,
+				237E24C31BB53A04003C37D6 /* lj_ctype.c */,
+				237E24C41BB53A04003C37D6 /* lj_ctype.h */,
+				237E24C51BB53A04003C37D6 /* lj_debug.c */,
+				237E24C61BB53A04003C37D6 /* lj_debug.h */,
+				237E24C71BB53A04003C37D6 /* lj_def.h */,
+				237E24C81BB53A04003C37D6 /* lj_dispatch.c */,
+				237E24C91BB53A04003C37D6 /* lj_dispatch.h */,
+				237E24CA1BB53A04003C37D6 /* lj_emit_arm.h */,
+				237E24CB1BB53A04003C37D6 /* lj_emit_mips.h */,
+				237E24CC1BB53A04003C37D6 /* lj_emit_ppc.h */,
+				237E24CD1BB53A04003C37D6 /* lj_emit_x86.h */,
+				237E24CE1BB53A04003C37D6 /* lj_err.c */,
+				237E24CF1BB53A04003C37D6 /* lj_err.h */,
+				237E24D01BB53A04003C37D6 /* lj_errmsg.h */,
+				237E24D11BB53A04003C37D6 /* lj_ff.h */,
+				237E24D21BB53A04003C37D6 /* lj_ffdef.h */,
+				237E24D31BB53A04003C37D6 /* lj_ffrecord.c */,
+				237E24D41BB53A04003C37D6 /* lj_ffrecord.h */,
+				237E24D51BB53A04003C37D6 /* lj_folddef.h */,
+				237E24D61BB53A04003C37D6 /* lj_frame.h */,
+				237E24D71BB53A04003C37D6 /* lj_func.c */,
+				237E24D81BB53A04003C37D6 /* lj_func.h */,
+				237E24D91BB53A04003C37D6 /* lj_gc.c */,
+				237E24DA1BB53A04003C37D6 /* lj_gc.h */,
+				237E24DB1BB53A04003C37D6 /* lj_gdbjit.c */,
+				237E24DC1BB53A04003C37D6 /* lj_gdbjit.h */,
+				237E24DD1BB53A04003C37D6 /* lj_ir.c */,
+				237E24DE1BB53A04003C37D6 /* lj_ir.h */,
+				237E24DF1BB53A04003C37D6 /* lj_ircall.h */,
+				237E24E01BB53A04003C37D6 /* lj_iropt.h */,
+				237E24E11BB53A04003C37D6 /* lj_jit.h */,
+				237E24E21BB53A04003C37D6 /* lj_lex.c */,
+				237E24E31BB53A04003C37D6 /* lj_lex.h */,
+				237E24E41BB53A04003C37D6 /* lj_lib.c */,
+				237E24E51BB53A04003C37D6 /* lj_lib.h */,
+				237E24E61BB53A04003C37D6 /* lj_libdef.h */,
+				237E24E71BB53A04003C37D6 /* lj_load.c */,
+				237E24E81BB53A04003C37D6 /* lj_mcode.c */,
+				237E24E91BB53A04003C37D6 /* lj_mcode.h */,
+				237E24EA1BB53A04003C37D6 /* lj_meta.c */,
+				237E24EB1BB53A04003C37D6 /* lj_meta.h */,
+				237E24EC1BB53A04003C37D6 /* lj_obj.c */,
+				237E24ED1BB53A04003C37D6 /* lj_obj.h */,
+				237E24EE1BB53A04003C37D6 /* lj_opt_dce.c */,
+				237E24EF1BB53A04003C37D6 /* lj_opt_fold.c */,
+				237E24F01BB53A04003C37D6 /* lj_opt_loop.c */,
+				237E24F11BB53A04003C37D6 /* lj_opt_mem.c */,
+				237E24F21BB53A04003C37D6 /* lj_opt_narrow.c */,
+				237E24F31BB53A04003C37D6 /* lj_opt_sink.c */,
+				237E24F41BB53A04003C37D6 /* lj_opt_split.c */,
+				237E24F51BB53A04003C37D6 /* lj_parse.c */,
+				237E24F61BB53A04003C37D6 /* lj_parse.h */,
+				237E24F71BB53A04003C37D6 /* lj_recdef.h */,
+				237E24F81BB53A04003C37D6 /* lj_record.c */,
+				237E24F91BB53A04003C37D6 /* lj_record.h */,
+				237E24FA1BB53A04003C37D6 /* lj_snap.c */,
+				237E24FB1BB53A04003C37D6 /* lj_snap.h */,
+				237E24FC1BB53A04003C37D6 /* lj_state.c */,
+				237E24FD1BB53A04003C37D6 /* lj_state.h */,
+				237E24FE1BB53A04003C37D6 /* lj_str.c */,
+				237E24FF1BB53A04003C37D6 /* lj_str.h */,
+				237E25001BB53A04003C37D6 /* lj_strscan.c */,
+				237E25011BB53A04003C37D6 /* lj_strscan.h */,
+				237E25021BB53A04003C37D6 /* lj_tab.c */,
+				237E25031BB53A04003C37D6 /* lj_tab.h */,
+				237E25041BB53A04003C37D6 /* lj_target_arm.h */,
+				237E25051BB53A04003C37D6 /* lj_target_mips.h */,
+				237E25061BB53A04003C37D6 /* lj_target_ppc.h */,
+				237E25071BB53A04003C37D6 /* lj_target_x86.h */,
+				237E25081BB53A04003C37D6 /* lj_target.h */,
+				237E25091BB53A04003C37D6 /* lj_trace.c */,
+				237E250A1BB53A04003C37D6 /* lj_trace.h */,
+				237E250B1BB53A04003C37D6 /* lj_traceerr.h */,
+				237E250C1BB53A04003C37D6 /* lj_udata.c */,
+				237E250D1BB53A04003C37D6 /* lj_udata.h */,
+				237E250E1BB53A04003C37D6 /* lj_vm.h */,
+				237E250F1BB53A05003C37D6 /* lj_vm.s */,
+				237E25101BB53A05003C37D6 /* lj_vmevent.c */,
+				237E25111BB53A05003C37D6 /* lj_vmevent.h */,
+				237E25121BB53A05003C37D6 /* lj_vmmath.c */,
+				237E25131BB53A05003C37D6 /* lj.supp */,
+				237E25151BB53A05003C37D6 /* lua.h */,
+				237E25161BB53A05003C37D6 /* lua.hpp */,
+				237E25171BB53A05003C37D6 /* luaconf.h */,
+				237E25191BB53A05003C37D6 /* luajit.h */,
+				237E251A1BB53A05003C37D6 /* lualib.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		237E25B41BB53A89003C37D6 /* DYNAsm */ = {
+			isa = PBXGroup;
+			children = (
+				237E25B51BB53A9E003C37D6 /* dasm_arm.h */,
+				237E25B61BB53A9E003C37D6 /* dasm_mips.h */,
+				237E25B71BB53A9E003C37D6 /* dasm_ppc.h */,
+				237E25B81BB53A9E003C37D6 /* dasm_proto.h */,
+				237E25B91BB53A9E003C37D6 /* dasm_x86.h */,
+			);
+			name = DYNAsm;
+			sourceTree = "<group>";
+		};
+		237E26E31BB54145003C37D6 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				237E26E41BB541A0003C37D6 /* test.c */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2365F7EE1BB9171400D713F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2365F7FD1BB917B100D713F1 /* lauxlib.h in Headers */,
+				2365F7FE1BB917B100D713F1 /* lua.h in Headers */,
+				2365F7FF1BB917B100D713F1 /* lua.hpp in Headers */,
+				2365F8001BB917B100D713F1 /* luaconf.h in Headers */,
+				2365F8011BB917B100D713F1 /* luajit.h in Headers */,
+				2365F8021BB917B100D713F1 /* lualib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237E24891BB53942003C37D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237E25541BB53A05003C37D6 /* lj_emit_ppc.h in Headers */,
+				237E25511BB53A05003C37D6 /* lj_dispatch.h in Headers */,
+				237E25831BB53A05003C37D6 /* lj_snap.h in Headers */,
+				237E25341BB53A05003C37D6 /* lj_bc.h in Headers */,
+				237E258C1BB53A05003C37D6 /* lj_target_arm.h in Headers */,
+				237E252F1BB53A05003C37D6 /* lj_asm_ppc.h in Headers */,
+				237E25461BB53A05003C37D6 /* lj_clib.h in Headers */,
+				237E25671BB53A05003C37D6 /* lj_ircall.h in Headers */,
+				237E258D1BB53A05003C37D6 /* lj_target_mips.h in Headers */,
+				237E25421BB53A05003C37D6 /* lj_cdata.h in Headers */,
+				237E25871BB53A05003C37D6 /* lj_str.h in Headers */,
+				237E259C1BB53A05003C37D6 /* lua.h in Headers */,
+				237E25BD1BB53A9E003C37D6 /* dasm_proto.h in Headers */,
+				237E25521BB53A05003C37D6 /* lj_emit_arm.h in Headers */,
+				237E25991BB53A05003C37D6 /* lj_vmevent.h in Headers */,
+				237E25901BB53A05003C37D6 /* lj_target.h in Headers */,
+				237E25301BB53A05003C37D6 /* lj_asm_x86.h in Headers */,
+				237E25BA1BB53A9E003C37D6 /* dasm_arm.h in Headers */,
+				237E25551BB53A05003C37D6 /* lj_emit_x86.h in Headers */,
+				237E25961BB53A05003C37D6 /* lj_vm.h in Headers */,
+				237E256D1BB53A05003C37D6 /* lj_lib.h in Headers */,
+				237E259D1BB53A05003C37D6 /* lua.hpp in Headers */,
+				237E25BE1BB53A9E003C37D6 /* dasm_x86.h in Headers */,
+				237E25661BB53A05003C37D6 /* lj_ir.h in Headers */,
+				237E255D1BB53A05003C37D6 /* lj_folddef.h in Headers */,
+				237E25BC1BB53A9E003C37D6 /* dasm_ppc.h in Headers */,
+				237E256B1BB53A05003C37D6 /* lj_lex.h in Headers */,
+				237E252A1BB53A05003C37D6 /* lj_alloc.h in Headers */,
+				237E25361BB53A05003C37D6 /* lj_bcdump.h in Headers */,
+				237E25621BB53A05003C37D6 /* lj_gc.h in Headers */,
+				237E25401BB53A05003C37D6 /* lj_cconv.h in Headers */,
+				237E258F1BB53A05003C37D6 /* lj_target_x86.h in Headers */,
+				237E253A1BB53A05003C37D6 /* lj_carith.h in Headers */,
+				237E25681BB53A05003C37D6 /* lj_iropt.h in Headers */,
+				237E251B1BB53A05003C37D6 /* lauxlib.h in Headers */,
+				237E255E1BB53A05003C37D6 /* lj_frame.h in Headers */,
+				237E253E1BB53A05003C37D6 /* lj_ccallback.h in Headers */,
+				237E25A01BB53A05003C37D6 /* luajit.h in Headers */,
+				237E25351BB53A05003C37D6 /* lj_bcdef.h in Headers */,
+				237E255C1BB53A05003C37D6 /* lj_ffrecord.h in Headers */,
+				237E255A1BB53A05003C37D6 /* lj_ffdef.h in Headers */,
+				237E25601BB53A05003C37D6 /* lj_func.h in Headers */,
+				237E25531BB53A05003C37D6 /* lj_emit_mips.h in Headers */,
+				237E254E1BB53A05003C37D6 /* lj_debug.h in Headers */,
+				237E257F1BB53A05003C37D6 /* lj_recdef.h in Headers */,
+				237E25951BB53A05003C37D6 /* lj_udata.h in Headers */,
+				237E254F1BB53A05003C37D6 /* lj_def.h in Headers */,
+				237E256E1BB53A05003C37D6 /* lj_libdef.h in Headers */,
+				237E258B1BB53A05003C37D6 /* lj_tab.h in Headers */,
+				237E25591BB53A05003C37D6 /* lj_ff.h in Headers */,
+				237E25321BB53A05003C37D6 /* lj_asm.h in Headers */,
+				237E253C1BB53A05003C37D6 /* lj_ccall.h in Headers */,
+				237E25931BB53A05003C37D6 /* lj_traceerr.h in Headers */,
+				237E25481BB53A05003C37D6 /* lj_cparse.h in Headers */,
+				237E25711BB53A05003C37D6 /* lj_mcode.h in Headers */,
+				237E25441BB53A05003C37D6 /* lj_char.h in Headers */,
+				237E254C1BB53A05003C37D6 /* lj_ctype.h in Headers */,
+				237E25921BB53A05003C37D6 /* lj_trace.h in Headers */,
+				237E25731BB53A05003C37D6 /* lj_meta.h in Headers */,
+				237E25691BB53A05003C37D6 /* lj_jit.h in Headers */,
+				237E252E1BB53A05003C37D6 /* lj_asm_mips.h in Headers */,
+				237E258E1BB53A05003C37D6 /* lj_target_ppc.h in Headers */,
+				237E25891BB53A05003C37D6 /* lj_strscan.h in Headers */,
+				237E254A1BB53A05003C37D6 /* lj_crecord.h in Headers */,
+				237E257E1BB53A05003C37D6 /* lj_parse.h in Headers */,
+				237E252C1BB53A05003C37D6 /* lj_arch.h in Headers */,
+				237E25811BB53A05003C37D6 /* lj_record.h in Headers */,
+				237E25641BB53A05003C37D6 /* lj_gdbjit.h in Headers */,
+				237E252D1BB53A05003C37D6 /* lj_asm_arm.h in Headers */,
+				237E259E1BB53A05003C37D6 /* luaconf.h in Headers */,
+				237E25851BB53A05003C37D6 /* lj_state.h in Headers */,
+				237E25A11BB53A05003C37D6 /* lualib.h in Headers */,
+				237E25581BB53A05003C37D6 /* lj_errmsg.h in Headers */,
+				237E25751BB53A05003C37D6 /* lj_obj.h in Headers */,
+				237E25BB1BB53A9E003C37D6 /* dasm_mips.h in Headers */,
+				237E25571BB53A05003C37D6 /* lj_err.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237E26551BB54092003C37D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237E26981BB5410C003C37D6 /* dasm_arm.h in Headers */,
+				237E26991BB5410C003C37D6 /* dasm_mips.h in Headers */,
+				237E269A1BB5410C003C37D6 /* dasm_ppc.h in Headers */,
+				237E269B1BB5410C003C37D6 /* dasm_proto.h in Headers */,
+				237E269C1BB5410C003C37D6 /* dasm_x86.h in Headers */,
+				237E269D1BB5410C003C37D6 /* lauxlib.h in Headers */,
+				237E269E1BB5410D003C37D6 /* lj_alloc.h in Headers */,
+				237E269F1BB5410D003C37D6 /* lj_arch.h in Headers */,
+				237E26A01BB5410D003C37D6 /* lj_asm_arm.h in Headers */,
+				237E26A11BB5410D003C37D6 /* lj_asm_mips.h in Headers */,
+				237E26A21BB5410D003C37D6 /* lj_asm_ppc.h in Headers */,
+				237E26A31BB5410D003C37D6 /* lj_asm_x86.h in Headers */,
+				237E26A41BB5410D003C37D6 /* lj_asm.h in Headers */,
+				237E26A51BB5410D003C37D6 /* lj_bc.h in Headers */,
+				237E26A61BB5410D003C37D6 /* lj_bcdef.h in Headers */,
+				237E26A71BB5410D003C37D6 /* lj_bcdump.h in Headers */,
+				237E26A81BB5410D003C37D6 /* lj_carith.h in Headers */,
+				237E26A91BB5410D003C37D6 /* lj_ccall.h in Headers */,
+				237E26AA1BB5410D003C37D6 /* lj_ccallback.h in Headers */,
+				237E26AB1BB5410D003C37D6 /* lj_cconv.h in Headers */,
+				237E26AC1BB5410D003C37D6 /* lj_cdata.h in Headers */,
+				237E26AD1BB5410E003C37D6 /* lj_char.h in Headers */,
+				237E26AE1BB5410E003C37D6 /* lj_clib.h in Headers */,
+				237E26AF1BB5410E003C37D6 /* lj_cparse.h in Headers */,
+				237E26B01BB5410E003C37D6 /* lj_crecord.h in Headers */,
+				237E26B11BB5410E003C37D6 /* lj_ctype.h in Headers */,
+				237E26B21BB5410E003C37D6 /* lj_debug.h in Headers */,
+				237E26B31BB5410E003C37D6 /* lj_def.h in Headers */,
+				237E26B41BB5410E003C37D6 /* lj_dispatch.h in Headers */,
+				237E26B51BB5410E003C37D6 /* lj_emit_arm.h in Headers */,
+				237E26B61BB5410E003C37D6 /* lj_emit_mips.h in Headers */,
+				237E26B71BB5410E003C37D6 /* lj_emit_ppc.h in Headers */,
+				237E26B81BB5410F003C37D6 /* lj_emit_x86.h in Headers */,
+				237E26B91BB5410F003C37D6 /* lj_err.h in Headers */,
+				237E26BA1BB5410F003C37D6 /* lj_errmsg.h in Headers */,
+				237E26BB1BB5410F003C37D6 /* lj_ff.h in Headers */,
+				237E26BC1BB5410F003C37D6 /* lj_ffdef.h in Headers */,
+				237E26BD1BB5410F003C37D6 /* lj_ffrecord.h in Headers */,
+				237E26BE1BB5410F003C37D6 /* lj_folddef.h in Headers */,
+				237E26BF1BB5410F003C37D6 /* lj_frame.h in Headers */,
+				237E26C01BB5410F003C37D6 /* lj_func.h in Headers */,
+				237E26C11BB5410F003C37D6 /* lj_gc.h in Headers */,
+				237E26C21BB54110003C37D6 /* lj_gdbjit.h in Headers */,
+				237E26C31BB54110003C37D6 /* lj_ir.h in Headers */,
+				237E26C41BB54110003C37D6 /* lj_ircall.h in Headers */,
+				237E26C51BB54110003C37D6 /* lj_iropt.h in Headers */,
+				237E26C61BB54110003C37D6 /* lj_jit.h in Headers */,
+				237E26C71BB54110003C37D6 /* lj_lex.h in Headers */,
+				237E26C81BB54110003C37D6 /* lj_lib.h in Headers */,
+				237E26C91BB54110003C37D6 /* lj_libdef.h in Headers */,
+				237E26CA1BB54111003C37D6 /* lj_mcode.h in Headers */,
+				237E26CB1BB54111003C37D6 /* lj_meta.h in Headers */,
+				237E26CC1BB54111003C37D6 /* lj_obj.h in Headers */,
+				237E26CD1BB54111003C37D6 /* lj_parse.h in Headers */,
+				237E26CE1BB54111003C37D6 /* lj_recdef.h in Headers */,
+				237E26CF1BB54111003C37D6 /* lj_record.h in Headers */,
+				237E26D01BB54111003C37D6 /* lj_snap.h in Headers */,
+				237E26D11BB54112003C37D6 /* lj_state.h in Headers */,
+				237E26D21BB54112003C37D6 /* lj_str.h in Headers */,
+				237E26D31BB54112003C37D6 /* lj_strscan.h in Headers */,
+				237E26D41BB54112003C37D6 /* lj_tab.h in Headers */,
+				237E26D51BB54112003C37D6 /* lj_target_arm.h in Headers */,
+				237E26D61BB54112003C37D6 /* lj_target_mips.h in Headers */,
+				237E26D71BB54112003C37D6 /* lj_target_ppc.h in Headers */,
+				237E26D81BB54113003C37D6 /* lj_target_x86.h in Headers */,
+				237E26D91BB54113003C37D6 /* lj_target.h in Headers */,
+				237E26DA1BB54113003C37D6 /* lj_trace.h in Headers */,
+				237E26DB1BB54113003C37D6 /* lj_traceerr.h in Headers */,
+				237E26DC1BB54113003C37D6 /* lj_udata.h in Headers */,
+				237E26DD1BB54113003C37D6 /* lj_vm.h in Headers */,
+				237E26DE1BB54114003C37D6 /* lj_vmevent.h in Headers */,
+				237E26DF1BB54114003C37D6 /* lua.h in Headers */,
+				237E26E01BB54114003C37D6 /* luaconf.h in Headers */,
+				237E26E11BB54114003C37D6 /* luajit.h in Headers */,
+				237E26E21BB54114003C37D6 /* lualib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2365F7F01BB9171400D713F1 /* luajit-famework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2365F7F61BB9171400D713F1 /* Build configuration list for PBXNativeTarget "luajit-famework" */;
+			buildPhases = (
+				2365F7EC1BB9171400D713F1 /* Sources */,
+				2365F7ED1BB9171400D713F1 /* Frameworks */,
+				2365F7EE1BB9171400D713F1 /* Headers */,
+				2365F7EF1BB9171400D713F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2365F7FA1BB9178800D713F1 /* PBXTargetDependency */,
+				2365F7FC1BB9178800D713F1 /* PBXTargetDependency */,
+			);
+			name = "luajit-famework";
+			productName = "luajit-famework";
+			productReference = 2365F7F11BB9171400D713F1 /* luajit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		237E248A1BB53942003C37D6 /* luajit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237E248F1BB53942003C37D6 /* Build configuration list for PBXNativeTarget "luajit" */;
+			buildPhases = (
+				237E24871BB53942003C37D6 /* Sources */,
+				237E24881BB53942003C37D6 /* Frameworks */,
+				237E24891BB53942003C37D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = luajit;
+			productName = luajit;
+			productReference = 237E248B1BB53942003C37D6 /* libluajit.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		237E26561BB54092003C37D6 /* luajit-static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237E26581BB54093003C37D6 /* Build configuration list for PBXNativeTarget "luajit-static" */;
+			buildPhases = (
+				237E26531BB54092003C37D6 /* Sources */,
+				237E26541BB54092003C37D6 /* Frameworks */,
+				237E26551BB54092003C37D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "luajit-static";
+			productName = luajit_static;
+			productReference = 237E26571BB54092003C37D6 /* libluajit-static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		237E26E91BB541F1003C37D6 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 237E26EE1BB541F1003C37D6 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				237E26E61BB541F1003C37D6 /* Sources */,
+				237E26E71BB541F1003C37D6 /* Frameworks */,
+				237E26E81BB541F1003C37D6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = test;
+			productName = test;
+			productReference = 237E26EA1BB541F1003C37D6 /* test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		237E24831BB53942003C37D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Utaha;
+				TargetAttributes = {
+					2365F7F01BB9171400D713F1 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					237E248A1BB53942003C37D6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					237E26561BB54092003C37D6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					237E26E91BB541F1003C37D6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 237E24861BB53942003C37D6 /* Build configuration list for PBXProject "luajit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 237E24821BB53942003C37D6;
+			productRefGroup = 237E248C1BB53942003C37D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				237E248A1BB53942003C37D6 /* luajit */,
+				237E26561BB54092003C37D6 /* luajit-static */,
+				237E26E91BB541F1003C37D6 /* test */,
+				2365F7F01BB9171400D713F1 /* luajit-famework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2365F7EF1BB9171400D713F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2365F8091BB9180900D713F1 /* libluajit.dylib in Resources */,
+				2365F80A1BB9180900D713F1 /* libluajit-static.a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2365F7EC1BB9171400D713F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237E24871BB53942003C37D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F6CF3C1BB54D580066808C /* lj_vm.s in Sources */,
+				23F6CF3A1BB54CD90066808C /* ljamalg.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237E26531BB54092003C37D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F6CF3D1BB54D610066808C /* lj_vm.s in Sources */,
+				23F6CF3B1BB54CE80066808C /* ljamalg.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		237E26E61BB541F1003C37D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				237E26F31BB54239003C37D6 /* test.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2365F7FA1BB9178800D713F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 237E248A1BB53942003C37D6 /* luajit */;
+			targetProxy = 2365F7F91BB9178800D713F1 /* PBXContainerItemProxy */;
+		};
+		2365F7FC1BB9178800D713F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 237E26561BB54092003C37D6 /* luajit-static */;
+			targetProxy = 2365F7FB1BB9178800D713F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2365F7F71BB9171400D713F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.Utaha.luajit-famework";
+				PRODUCT_NAME = luajit;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2365F7F81BB9171400D713F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.Utaha.luajit-famework";
+				PRODUCT_NAME = luajit;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		237E248D1BB53942003C37D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../src;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DLUAJIT_OS=LUAJIT_OS_OSX";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		237E248E1BB53942003C37D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../src;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-DLUAJIT_OS=LUAJIT_OS_OSX";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		237E24901BB53942003C37D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_VARIANTS = normal;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		237E24911BB53942003C37D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_VARIANTS = normal;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		237E26591BB54093003C37D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		237E265A1BB54093003C37D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		237E26EF1BB541F1003C37D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		237E26F01BB541F1003C37D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2365F7F61BB9171400D713F1 /* Build configuration list for PBXNativeTarget "luajit-famework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2365F7F71BB9171400D713F1 /* Debug */,
+				2365F7F81BB9171400D713F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		237E24861BB53942003C37D6 /* Build configuration list for PBXProject "luajit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237E248D1BB53942003C37D6 /* Debug */,
+				237E248E1BB53942003C37D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		237E248F1BB53942003C37D6 /* Build configuration list for PBXNativeTarget "luajit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237E24901BB53942003C37D6 /* Debug */,
+				237E24911BB53942003C37D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		237E26581BB54093003C37D6 /* Build configuration list for PBXNativeTarget "luajit-static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237E26591BB54093003C37D6 /* Debug */,
+				237E265A1BB54093003C37D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		237E26EE1BB541F1003C37D6 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				237E26EF1BB541F1003C37D6 /* Debug */,
+				237E26F01BB541F1003C37D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 237E24831BB53942003C37D6 /* Project object */;
+}
