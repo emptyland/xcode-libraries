@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../luajit/xcode/luajit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../gtest/xcode/gtest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../glog/xcode/glog.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../glfw/xcode/glfw.xcodeproj">
+   </FileRef>
+</Workspace>
