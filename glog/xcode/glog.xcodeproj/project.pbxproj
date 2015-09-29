@@ -57,7 +57,6 @@
 		238B4EE01A1F1BEC006AA916 /* INSTALL in Resources */ = {isa = PBXBuildFile; fileRef = 238B4E0F1A1F1239006AA916 /* INSTALL */; };
 		238B4EE11A1F1BEC006AA916 /* NEWS in Resources */ = {isa = PBXBuildFile; fileRef = 238B4E101A1F1239006AA916 /* NEWS */; };
 		238B4EE21A1F1BEC006AA916 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 238B4E111A1F1239006AA916 /* README */; };
-		238B4EE31A1F1BEC006AA916 /* libglog.a in Resources */ = {isa = PBXBuildFile; fileRef = 238B4E371A1F1660006AA916 /* libglog.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -282,9 +281,9 @@
 			productReference = 238B4E371A1F1660006AA916 /* libglog.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		238B4EAB1A1F1B40006AA916 /* glog */ = {
+		238B4EAB1A1F1B40006AA916 /* glog-framework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 238B4EBF1A1F1B40006AA916 /* Build configuration list for PBXNativeTarget "glog" */;
+			buildConfigurationList = 238B4EBF1A1F1B40006AA916 /* Build configuration list for PBXNativeTarget "glog-framework" */;
 			buildPhases = (
 				238B4EA71A1F1B40006AA916 /* Sources */,
 				238B4EA81A1F1B40006AA916 /* Frameworks */,
@@ -296,7 +295,7 @@
 			dependencies = (
 				238B4EC61A1F1BB5006AA916 /* PBXTargetDependency */,
 			);
-			name = glog;
+			name = "glog-framework";
 			productName = glog;
 			productReference = 238B4EAC1A1F1B40006AA916 /* glog.framework */;
 			productType = "com.apple.product-type.framework";
@@ -331,7 +330,7 @@
 			projectRoot = "";
 			targets = (
 				238B4E361A1F1660006AA916 /* libglog */,
-				238B4EAB1A1F1B40006AA916 /* glog */,
+				238B4EAB1A1F1B40006AA916 /* glog-framework */,
 			);
 		};
 /* End PBXProject section */
@@ -347,7 +346,6 @@
 				238B4EE01A1F1BEC006AA916 /* INSTALL in Resources */,
 				238B4EE11A1F1BEC006AA916 /* NEWS in Resources */,
 				238B4EE21A1F1BEC006AA916 /* README in Resources */,
-				238B4EE31A1F1BEC006AA916 /* libglog.a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +451,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = glog;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -478,7 +476,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = glog;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -571,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		238B4EBF1A1F1B40006AA916 /* Build configuration list for PBXNativeTarget "glog" */ = {
+		238B4EBF1A1F1B40006AA916 /* Build configuration list for PBXNativeTarget "glog-framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				238B4EC01A1F1B40006AA916 /* Debug */,

@@ -28,18 +28,34 @@
 		2321330B1BB93D7700BB5A5C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2321330A1BB93D7700BB5A5C /* Cocoa.framework */; };
 		2321330C1BB93D8D00BB5A5C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC7BBB1BB9364600A3F80B /* OpenGL.framework */; };
 		232133121BB93EFA00BB5A5C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232133111BB93EFA00BB5A5C /* CoreVideo.framework */; };
-		232133251BB940D900BB5A5C /* GLFW in Headers */ = {isa = PBXBuildFile; fileRef = 232133231BB940C300BB5A5C /* GLFW */; settings = {ATTRIBUTES = (Public, ); }; };
 		2321332C1BB9430300BB5A5C /* windows.c in Sources */ = {isa = PBXBuildFile; fileRef = 2321332B1BB9430300BB5A5C /* windows.c */; settings = {ASSET_TAGS = (); }; };
 		2321333A1BB9434900BB5A5C /* windows.c in Sources */ = {isa = PBXBuildFile; fileRef = 2321332B1BB9430300BB5A5C /* windows.c */; };
 		2321334D1BB9486000BB5A5C /* libglfw3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 232132F41BB93A1600BB5A5C /* libglfw3.dylib */; };
 		2321336D1BB97F1F00BB5A5C /* title.c in Sources */ = {isa = PBXBuildFile; fileRef = 2321334E1BB94A5700BB5A5C /* title.c */; };
 		232133701BB97F3300BB5A5C /* libglfw3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 232132F41BB93A1600BB5A5C /* libglfw3.dylib */; };
-		232133761BB9800B00BB5A5C /* cursor.c in Sources */ = {isa = PBXBuildFile; fileRef = 232133751BB9800B00BB5A5C /* cursor.c */; settings = {ASSET_TAGS = (); }; };
-		232133771BB9800B00BB5A5C /* cursor.c in Sources */ = {isa = PBXBuildFile; fileRef = 232133751BB9800B00BB5A5C /* cursor.c */; settings = {ASSET_TAGS = (); }; };
 		232133841BB9804400BB5A5C /* cursor.c in Sources */ = {isa = PBXBuildFile; fileRef = 232133751BB9800B00BB5A5C /* cursor.c */; };
 		232133871BB9804F00BB5A5C /* libglfw3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 232132F41BB93A1600BB5A5C /* libglfw3.dylib */; };
 		232133941BB981B300BB5A5C /* cursoranim.c in Sources */ = {isa = PBXBuildFile; fileRef = 232133881BB9817A00BB5A5C /* cursoranim.c */; };
 		232133951BB981B700BB5A5C /* libglfw3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 232132F41BB93A1600BB5A5C /* libglfw3.dylib */; };
+		23EB66921BBA35B3006C6A72 /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7B971BB9289100A3F80B /* cocoa_init.m */; };
+		23EB66931BBA35B3006C6A72 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7B981BB9289100A3F80B /* cocoa_monitor.m */; };
+		23EB66951BBA35B3006C6A72 /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7B9A1BB9289100A3F80B /* cocoa_window.m */; };
+		23EB66961BBA35C3006C6A72 /* iokit_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7BA01BB9289100A3F80B /* iokit_joystick.m */; };
+		23EB66971BBA35C3006C6A72 /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7BA41BB9289100A3F80B /* nsgl_context.m */; };
+		23EB66981BBA35D5006C6A72 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7B9B1BB9289100A3F80B /* context.c */; };
+		23EB66991BBA35D5006C6A72 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7B9C1BB9289100A3F80B /* init.c */; };
+		23EB669A1BBA35D5006C6A72 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7B9D1BB9289100A3F80B /* input.c */; };
+		23EB669B1BBA35D5006C6A72 /* mach_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7BA11BB9289100A3F80B /* mach_time.c */; };
+		23EB669C1BBA35D5006C6A72 /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7BA21BB9289100A3F80B /* monitor.c */; };
+		23EB669D1BBA35D5006C6A72 /* posix_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7BA51BB9289100A3F80B /* posix_tls.c */; };
+		23EB669E1BBA35D5006C6A72 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7BA71BB9289100A3F80B /* window.c */; };
+		23EB669F1BBA3626006C6A72 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232133111BB93EFA00BB5A5C /* CoreVideo.framework */; };
+		23EB66A01BBA362D006C6A72 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC7BBB1BB9364600A3F80B /* OpenGL.framework */; };
+		23EB66A11BBA3639006C6A72 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2321330A1BB93D7700BB5A5C /* Cocoa.framework */; };
+		23EB66A51BBA36D7006C6A72 /* glfw3.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EB66A31BBA36D7006C6A72 /* glfw3.h */; settings = {ASSET_TAGS = (); }; };
+		23EB66A61BBA36D7006C6A72 /* glfw3native.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EB66A41BBA36D7006C6A72 /* glfw3native.h */; settings = {ASSET_TAGS = (); }; };
+		23EB66A71BBA36E1006C6A72 /* glfw3.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EB66A31BBA36D7006C6A72 /* glfw3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23EB66A81BBA36E1006C6A72 /* glfw3native.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EB66A41BBA36D7006C6A72 /* glfw3native.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23FC7BA81BB9289100A3F80B /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7B971BB9289100A3F80B /* cocoa_init.m */; settings = {ASSET_TAGS = (); }; };
 		23FC7BA91BB9289100A3F80B /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FC7B981BB9289100A3F80B /* cocoa_monitor.m */; settings = {ASSET_TAGS = (); }; };
 		23FC7BAA1BB9289100A3F80B /* cocoa_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 23FC7B991BB9289100A3F80B /* cocoa_platform.h */; settings = {ASSET_TAGS = (); }; };
@@ -151,7 +167,6 @@
 		2321330E1BB93E8400BB5A5C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		232133111BB93EFA00BB5A5C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		232133181BB9400000BB5A5C /* glfw3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = glfw3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		232133231BB940C300BB5A5C /* GLFW */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GLFW; path = ../include/GLFW; sourceTree = "<group>"; };
 		2321332B1BB9430300BB5A5C /* windows.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = windows.c; path = ../tests/windows.c; sourceTree = "<group>"; };
 		232133331BB9432F00BB5A5C /* windows */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = windows; sourceTree = BUILT_PRODUCTS_DIR; };
 		2321334E1BB94A5700BB5A5C /* title.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = title.c; path = ../tests/title.c; sourceTree = "<group>"; };
@@ -161,6 +176,8 @@
 		232133881BB9817A00BB5A5C /* cursoranim.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cursoranim.c; path = ../tests/cursoranim.c; sourceTree = "<group>"; };
 		2321338D1BB9819D00BB5A5C /* cursoranim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cursoranim; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A522351BB92748001DF5BD /* libglfw3-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libglfw3-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23EB66A31BBA36D7006C6A72 /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glfw3.h; path = ../include/GLFW/glfw3.h; sourceTree = "<group>"; };
+		23EB66A41BBA36D7006C6A72 /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glfw3native.h; path = ../include/GLFW/glfw3native.h; sourceTree = "<group>"; };
 		23FC7B971BB9289100A3F80B /* cocoa_init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cocoa_init.m; path = ../src/cocoa_init.m; sourceTree = "<group>"; };
 		23FC7B981BB9289100A3F80B /* cocoa_monitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cocoa_monitor.m; path = ../src/cocoa_monitor.m; sourceTree = "<group>"; };
 		23FC7B991BB9289100A3F80B /* cocoa_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cocoa_platform.h; path = ../src/cocoa_platform.h; sourceTree = "<group>"; };
@@ -197,6 +214,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EB66A11BBA3639006C6A72 /* Cocoa.framework in Frameworks */,
+				23EB66A01BBA362D006C6A72 /* OpenGL.framework in Frameworks */,
+				23EB669F1BBA3626006C6A72 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +265,8 @@
 		232133221BB9409000BB5A5C /* Include */ = {
 			isa = PBXGroup;
 			children = (
-				232133231BB940C300BB5A5C /* GLFW */,
+				23EB66A31BBA36D7006C6A72 /* glfw3.h */,
+				23EB66A41BBA36D7006C6A72 /* glfw3native.h */,
 			);
 			name = Include;
 			sourceTree = "<group>";
@@ -335,7 +356,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				232133251BB940D900BB5A5C /* GLFW in Headers */,
+				23EB66A71BBA36E1006C6A72 /* glfw3.h in Headers */,
+				23EB66A81BBA36E1006C6A72 /* glfw3native.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,10 +365,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EB66A51BBA36D7006C6A72 /* glfw3.h in Headers */,
 				23FC7BBA1BB9294A00A3F80B /* glfw_config.h in Headers */,
 				23FC7BB41BB9289100A3F80B /* nsgl_context.h in Headers */,
 				23FC7BB71BB9289100A3F80B /* posix_tls.h in Headers */,
 				23FC7BAA1BB9289100A3F80B /* cocoa_platform.h in Headers */,
+				23EB66A61BBA36D7006C6A72 /* glfw3native.h in Headers */,
 				23FC7BAF1BB9289100A3F80B /* internal.h in Headers */,
 				23FC7BB01BB9289100A3F80B /* iokit_joystick.h in Headers */,
 			);
@@ -558,7 +582,6 @@
 				232133031BB93C8300BB5A5C /* nsgl_context.m in Sources */,
 				232132F81BB93C7800BB5A5C /* context.c in Sources */,
 				232132F91BB93C7800BB5A5C /* init.c in Sources */,
-				232133771BB9800B00BB5A5C /* cursor.c in Sources */,
 				232132FA1BB93C7800BB5A5C /* input.c in Sources */,
 				232132FB1BB93C7800BB5A5C /* mach_time.c in Sources */,
 				232132FC1BB93C7800BB5A5C /* monitor.c in Sources */,
@@ -571,6 +594,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EB66981BBA35D5006C6A72 /* context.c in Sources */,
+				23EB66991BBA35D5006C6A72 /* init.c in Sources */,
+				23EB669A1BBA35D5006C6A72 /* input.c in Sources */,
+				23EB669B1BBA35D5006C6A72 /* mach_time.c in Sources */,
+				23EB669C1BBA35D5006C6A72 /* monitor.c in Sources */,
+				23EB669D1BBA35D5006C6A72 /* posix_tls.c in Sources */,
+				23EB669E1BBA35D5006C6A72 /* window.c in Sources */,
+				23EB66961BBA35C3006C6A72 /* iokit_joystick.m in Sources */,
+				23EB66971BBA35C3006C6A72 /* nsgl_context.m in Sources */,
+				23EB66921BBA35B3006C6A72 /* cocoa_init.m in Sources */,
+				23EB66931BBA35B3006C6A72 /* cocoa_monitor.m in Sources */,
+				23EB66951BBA35B3006C6A72 /* cocoa_window.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,7 +652,6 @@
 				23FC7BB11BB9289100A3F80B /* iokit_joystick.m in Sources */,
 				23FC7BB21BB9289100A3F80B /* mach_time.c in Sources */,
 				23FC7BA91BB9289100A3F80B /* cocoa_monitor.m in Sources */,
-				232133761BB9800B00BB5A5C /* cursor.c in Sources */,
 				23FC7BAB1BB9289100A3F80B /* cocoa_window.m in Sources */,
 				23FC7BA81BB9289100A3F80B /* cocoa_init.m in Sources */,
 				23FC7BB81BB9289100A3F80B /* window.c in Sources */,
@@ -692,6 +726,8 @@
 		2321331E1BB9400000BB5A5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -702,6 +738,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-D_GLFW_USE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.Utaha.glfw-framework";
 				PRODUCT_NAME = glfw3;
 				SKIP_INSTALL = YES;
@@ -713,6 +750,8 @@
 		2321331F1BB9400000BB5A5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -723,6 +762,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "-D_GLFW_USE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.Utaha.glfw-framework";
 				PRODUCT_NAME = glfw3;
 				SKIP_INSTALL = YES;
@@ -904,6 +944,7 @@
 				232132F71BB93A1700BB5A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2321331D1BB9400000BB5A5C /* Build configuration list for PBXNativeTarget "glfw3-framework" */ = {
 			isa = XCConfigurationList;
@@ -912,6 +953,7 @@
 				2321331F1BB9400000BB5A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232133371BB9432F00BB5A5C /* Build configuration list for PBXNativeTarget "windows" */ = {
 			isa = XCConfigurationList;
@@ -920,6 +962,7 @@
 				232133391BB9432F00BB5A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2321336A1BB97EFE00BB5A5C /* Build configuration list for PBXNativeTarget "title" */ = {
 			isa = XCConfigurationList;
@@ -928,6 +971,7 @@
 				2321336C1BB97EFE00BB5A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232133811BB9802700BB5A5C /* Build configuration list for PBXNativeTarget "cursor" */ = {
 			isa = XCConfigurationList;
@@ -936,6 +980,7 @@
 				232133831BB9802700BB5A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		232133911BB9819D00BB5A5C /* Build configuration list for PBXNativeTarget "cursoranim" */ = {
 			isa = XCConfigurationList;
@@ -944,6 +989,7 @@
 				232133931BB9819D00BB5A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A522301BB92748001DF5BD /* Build configuration list for PBXProject "glfw" */ = {
 			isa = XCConfigurationList;

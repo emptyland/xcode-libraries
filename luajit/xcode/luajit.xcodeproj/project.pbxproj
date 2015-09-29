@@ -14,8 +14,6 @@
 		2365F8001BB917B100D713F1 /* luaconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25171BB53A05003C37D6 /* luaconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2365F8011BB917B100D713F1 /* luajit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25191BB53A05003C37D6 /* luajit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2365F8021BB917B100D713F1 /* lualib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E251A1BB53A05003C37D6 /* lualib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2365F8091BB9180900D713F1 /* libluajit.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 237E248B1BB53942003C37D6 /* libluajit.dylib */; };
-		2365F80A1BB9180900D713F1 /* libluajit-static.a in Resources */ = {isa = PBXBuildFile; fileRef = 237E26571BB54092003C37D6 /* libluajit-static.a */; };
 		237E251B1BB53A05003C37D6 /* lauxlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24931BB53A04003C37D6 /* lauxlib.h */; settings = {ASSET_TAGS = (); }; };
 		237E252A1BB53A05003C37D6 /* lj_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A21BB53A04003C37D6 /* lj_alloc.h */; settings = {ASSET_TAGS = (); }; };
 		237E252C1BB53A05003C37D6 /* lj_arch.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24A41BB53A04003C37D6 /* lj_arch.h */; settings = {ASSET_TAGS = (); }; };
@@ -168,6 +166,8 @@
 		237E26E11BB54114003C37D6 /* luajit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25191BB53A05003C37D6 /* luajit.h */; };
 		237E26E21BB54114003C37D6 /* lualib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E251A1BB53A05003C37D6 /* lualib.h */; };
 		237E26F31BB54239003C37D6 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 237E26E41BB541A0003C37D6 /* test.c */; };
+		23EB667E1BBA2D86006C6A72 /* ljamalg.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F6CF381BB54C810066808C /* ljamalg.c */; };
+		23EB667F1BBA2D95006C6A72 /* lj_vm.s in Sources */ = {isa = PBXBuildFile; fileRef = 237E250F1BB53A05003C37D6 /* lj_vm.s */; };
 		23F6CF3A1BB54CD90066808C /* ljamalg.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F6CF381BB54C810066808C /* ljamalg.c */; };
 		23F6CF3B1BB54CE80066808C /* ljamalg.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F6CF381BB54C810066808C /* ljamalg.c */; };
 		23F6CF3C1BB54D580066808C /* lj_vm.s in Sources */ = {isa = PBXBuildFile; fileRef = 237E250F1BB53A05003C37D6 /* lj_vm.s */; };
@@ -574,10 +574,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2365F8001BB917B100D713F1 /* luaconf.h in Headers */,
 				2365F7FD1BB917B100D713F1 /* lauxlib.h in Headers */,
 				2365F7FE1BB917B100D713F1 /* lua.h in Headers */,
 				2365F7FF1BB917B100D713F1 /* lua.hpp in Headers */,
-				2365F8001BB917B100D713F1 /* luaconf.h in Headers */,
 				2365F8011BB917B100D713F1 /* luajit.h in Headers */,
 				2365F8021BB917B100D713F1 /* lualib.h in Headers */,
 			);
@@ -870,8 +870,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2365F8091BB9180900D713F1 /* libluajit.dylib in Resources */,
-				2365F80A1BB9180900D713F1 /* libluajit-static.a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -882,6 +880,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EB667F1BBA2D95006C6A72 /* lj_vm.s in Sources */,
+				23EB667E1BBA2D86006C6A72 /* ljamalg.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
