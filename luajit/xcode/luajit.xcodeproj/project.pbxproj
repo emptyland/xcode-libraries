@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2365F7EB1BB916CB00D713F1 /* libluajit.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 237E248B1BB53942003C37D6 /* libluajit.dylib */; };
 		2365F7FD1BB917B100D713F1 /* lauxlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E24931BB53A04003C37D6 /* lauxlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2365F7FE1BB917B100D713F1 /* lua.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25151BB53A05003C37D6 /* lua.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2365F7FF1BB917B100D713F1 /* lua.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 237E25161BB53A05003C37D6 /* lua.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -165,7 +164,8 @@
 		237E26E01BB54114003C37D6 /* luaconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25171BB53A05003C37D6 /* luaconf.h */; };
 		237E26E11BB54114003C37D6 /* luajit.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E25191BB53A05003C37D6 /* luajit.h */; };
 		237E26E21BB54114003C37D6 /* lualib.h in Headers */ = {isa = PBXBuildFile; fileRef = 237E251A1BB53A05003C37D6 /* lualib.h */; };
-		237E26F31BB54239003C37D6 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 237E26E41BB541A0003C37D6 /* test.c */; };
+		237E26F31BB54239003C37D6 /* test.cc in Sources */ = {isa = PBXBuildFile; fileRef = 237E26E41BB541A0003C37D6 /* test.cc */; };
+		238D3ACF1BC55DB900B6EA68 /* luajit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2365F7F11BB9171400D713F1 /* luajit.framework */; };
 		23EB667E1BBA2D86006C6A72 /* ljamalg.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F6CF381BB54C810066808C /* ljamalg.c */; };
 		23EB667F1BBA2D95006C6A72 /* lj_vm.s in Sources */ = {isa = PBXBuildFile; fileRef = 237E250F1BB53A05003C37D6 /* lj_vm.s */; };
 		23F6CF3A1BB54CD90066808C /* ljamalg.c in Sources */ = {isa = PBXBuildFile; fileRef = 23F6CF381BB54C810066808C /* ljamalg.c */; };
@@ -188,6 +188,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 237E26561BB54092003C37D6;
 			remoteInfo = "luajit-static";
+		};
+		238D3ACD1BC55DB000B6EA68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 237E24831BB53942003C37D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2365F7F01BB9171400D713F1;
+			remoteInfo = "luajit-famework";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -346,7 +353,7 @@
 		237E25B81BB53A9E003C37D6 /* dasm_proto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dasm_proto.h; path = ../dynasm/dasm_proto.h; sourceTree = "<group>"; };
 		237E25B91BB53A9E003C37D6 /* dasm_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dasm_x86.h; path = ../dynasm/dasm_x86.h; sourceTree = "<group>"; };
 		237E26571BB54092003C37D6 /* libluajit-static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libluajit-static.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		237E26E41BB541A0003C37D6 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = test.c; path = ../test/test.c; sourceTree = "<group>"; };
+		237E26E41BB541A0003C37D6 /* test.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = test.cc; path = ../test/test.cc; sourceTree = "<group>"; };
 		237E26EA1BB541F1003C37D6 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F6CF381BB54C810066808C /* ljamalg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ljamalg.c; path = ../src/ljamalg.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -377,7 +384,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2365F7EB1BB916CB00D713F1 /* libluajit.dylib in Frameworks */,
+				238D3ACF1BC55DB900B6EA68 /* luajit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +569,7 @@
 		237E26E31BB54145003C37D6 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				237E26E41BB541A0003C37D6 /* test.c */,
+				237E26E41BB541A0003C37D6 /* test.cc */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -816,6 +823,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				238D3ACE1BC55DB000B6EA68 /* PBXTargetDependency */,
 			);
 			name = test;
 			productName = test;
@@ -907,7 +915,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				237E26F31BB54239003C37D6 /* test.c in Sources */,
+				237E26F31BB54239003C37D6 /* test.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -923,6 +931,11 @@
 			isa = PBXTargetDependency;
 			target = 237E26561BB54092003C37D6 /* luajit-static */;
 			targetProxy = 2365F7FB1BB9178800D713F1 /* PBXContainerItemProxy */;
+		};
+		238D3ACE1BC55DB000B6EA68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2365F7F01BB9171400D713F1 /* luajit-famework */;
+			targetProxy = 238D3ACD1BC55DB000B6EA68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

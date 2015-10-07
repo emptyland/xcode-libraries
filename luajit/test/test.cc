@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "lua.h"
-#include "lualib.h"
-#include "lauxlib.h"
+#include "luajit/lua.hpp"
 
 int main(int argc, char *argv[]) {
 
@@ -19,5 +17,6 @@ int main(int argc, char *argv[]) {
 
 
     lua_close(L);
+    printf("ok\n");
     return 0;
 }

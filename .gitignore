@@ -27,6 +27,9 @@
 *.out
 *.app
 
+# Font files
+*.otf
+
 # Xcode files
 glog/xcode/glog.xcodeproj/xcuserdata
 glog/xcode/glog.xcodeproj/project.xcworkspace
