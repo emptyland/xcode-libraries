@@ -1,6 +1,6 @@
 #include <string>
 #include <stdio.h>
-#include <wchar.h>
+#include <unistd.h>
 
 #include "freetype/ft2build.h"
 #include FT_FREETYPE_H
@@ -13,7 +13,6 @@ static void render(FT_Face face) {
             if (face->glyph->bitmap.buffer
                 [row * face->glyph->bitmap.pitch +
                  pixel / 8] & (0xC0 >> (pixel % 8)))
-                //printf("\033[44;37m" " " "\033[m");
                 printf("X");
             else
                 printf("_");
@@ -23,6 +22,14 @@ static void render(FT_Face face) {
 }
 
 int main(int argc, char *argv[]) {
+    char pwd[260];
+    printf("cwd: %s\n", getcwd(pwd, sizeof(pwd)));
+
+    if (argc < 2) {
+        printf("bad option.\n");
+        return 255;
+    }
+
     FT_Library  library;
 
     FT_Error err = FT_Init_FreeType(&library);
@@ -33,7 +40,7 @@ int main(int argc, char *argv[]) {
 
 
     FT_Face face;
-    err = FT_New_Face(library, "fonts/SourceHanSansSC-Regular.otf", 0, &face);
+    err = FT_New_Face(library, argv[1], 0, &face);
     if (err == FT_Err_Unknown_File_Format) {
         printf("err: font file not support.\n");
         return 1;
