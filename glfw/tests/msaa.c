@@ -1,5 +1,5 @@
 //========================================================================
-// Clipboard test program
+// Multisample anti-aliasing test
 // Copyright (c) Camilla Berglund <elmindreda@elmindreda.org>
 //
 // This software is provided 'as-is', without any express or implied
@@ -23,10 +23,13 @@
 //
 //========================================================================
 //
-// This program is used to test the clipboard functionality.
+// This test renders two high contrast, slowly rotating quads, one aliased
+// and one (hopefully) anti-aliased, thus allowing for visual verification
+// of whether MSAA is indeed enabled
 //
 //========================================================================
 
+#define GLFW_INCLUDE_GLEXT
 #include <GLFW/glfw3.h>
 
 #include <stdio.h>
@@ -34,20 +37,14 @@
 
 #include "getopt.h"
 
-#if defined(__APPLE__)
- #define MODIFIER GLFW_MOD_SUPER
-#else
- #define MODIFIER GLFW_MOD_CONTROL
-#endif
-
-static void usage(void)
-{
-    printf("Usage: clipboard [-h]\n");
-}
-
 static void error_callback(int error, const char* description)
 {
     fprintf(stderr, "Error: %s\n", description);
+}
+
+static void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+    glViewport(0, 0, width, height);
 }
 
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -57,52 +54,32 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
 
     switch (key)
     {
-        case GLFW_KEY_ESCAPE:
-            glfwSetWindowShouldClose(window, GL_TRUE);
-            break;
-
-        case GLFW_KEY_V:
-            if (mods == MODIFIER)
-            {
-                const char* string;
-
-                string = glfwGetClipboardString(window);
-                if (string)
-                    printf("Clipboard contains \"%s\"\n", string);
-                else
-                    printf("Clipboard does not contain a string\n");
-            }
-            break;
-
-        case GLFW_KEY_C:
-            if (mods == MODIFIER)
-            {
-                const char* string = "Hello GLFW World!";
-                glfwSetClipboardString(window, string);
-                printf("Setting clipboard to \"%s\"\n", string);
-            }
+        case GLFW_KEY_SPACE:
+            glfwSetTime(0.0);
             break;
     }
 }
 
-static void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+static void usage(void)
 {
-    glViewport(0, 0, width, height);
+    printf("Usage: msaa [-h] [-s SAMPLES]\n");
 }
 
 int main(int argc, char** argv)
 {
-    int ch;
+    int ch, samples = 4;
     GLFWwindow* window;
 
-    while ((ch = getopt(argc, argv, "h")) != -1)
+    while ((ch = getopt(argc, argv, "hs:")) != -1)
     {
         switch (ch)
         {
             case 'h':
                 usage();
                 exit(EXIT_SUCCESS);
-
+            case 's':
+                samples = atoi(optarg);
+                break;
             default:
                 usage();
                 exit(EXIT_FAILURE);
@@ -112,41 +89,71 @@ int main(int argc, char** argv)
     glfwSetErrorCallback(error_callback);
 
     if (!glfwInit())
-    {
-        fprintf(stderr, "Failed to initialize GLFW\n");
         exit(EXIT_FAILURE);
-    }
 
-    window = glfwCreateWindow(200, 200, "Clipboard Test", NULL, NULL);
+    if (samples)
+        printf("Requesting MSAA with %i samples\n", samples);
+    else
+        printf("Requesting that MSAA not be available\n");
+
+    glfwWindowHint(GLFW_SAMPLES, samples);
+    glfwWindowHint(GLFW_VISIBLE, GL_FALSE);
+
+    window = glfwCreateWindow(800, 400, "Aliasing Detector", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
-
-        fprintf(stderr, "Failed to open GLFW window\n");
         exit(EXIT_FAILURE);
     }
-
-    glfwMakeContextCurrent(window);
-    glfwSwapInterval(1);
 
     glfwSetKeyCallback(window, key_callback);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
-    glMatrixMode(GL_PROJECTION);
-    glOrtho(-1.f, 1.f, -1.f, 1.f, -1.f, 1.f);
-    glMatrixMode(GL_MODELVIEW);
+    glfwMakeContextCurrent(window);
+    glfwSwapInterval(1);
 
-    glClearColor(0.5f, 0.5f, 0.5f, 0);
+    if (!glfwExtensionSupported("GL_ARB_multisample"))
+    {
+        printf("GL_ARB_multisample extension not supported\n");
+
+        glfwTerminate();
+        exit(EXIT_FAILURE);
+    }
+
+    glfwShowWindow(window);
+
+    glGetIntegerv(GL_SAMPLES_ARB, &samples);
+    if (samples)
+        printf("Context reports MSAA is available with %i samples\n", samples);
+    else
+        printf("Context reports MSAA is unavailable\n");
+
+    glMatrixMode(GL_PROJECTION);
+    glOrtho(0.f, 1.f, 0.f, 0.5f, 0.f, 1.f);
+    glMatrixMode(GL_MODELVIEW);
 
     while (!glfwWindowShouldClose(window))
     {
+        GLfloat time = (GLfloat) glfwGetTime();
+
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glColor3f(0.8f, 0.2f, 0.4f);
-        glRectf(-0.5f, -0.5f, 0.5f, 0.5f);
+        glLoadIdentity();
+        glTranslatef(0.25f, 0.25f, 0.f);
+        glRotatef(time, 0.f, 0.f, 1.f);
+
+        glDisable(GL_MULTISAMPLE_ARB);
+        glRectf(-0.15f, -0.15f, 0.15f, 0.15f);
+
+        glLoadIdentity();
+        glTranslatef(0.75f, 0.25f, 0.f);
+        glRotatef(time, 0.f, 0.f, 1.f);
+
+        glEnable(GL_MULTISAMPLE_ARB);
+        glRectf(-0.15f, -0.15f, 0.15f, 0.15f);
 
         glfwSwapBuffers(window);
-        glfwWaitEvents();
+        glfwPollEvents();
     }
 
     glfwTerminate();
