@@ -38,7 +38,6 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-
     FT_Face face;
     err = FT_New_Face(library, argv[1], 0, &face);
     if (err == FT_Err_Unknown_File_Format) {
