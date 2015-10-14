@@ -738,10 +738,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = (
-					"-D_GLFW_USE_CONFIG_H",
-					"-D_GLFW_USE_RETINA",
-				);
+				OTHER_CFLAGS = "-D_GLFW_USE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.Utaha.glfw-framework";
 				PRODUCT_NAME = glfw3;
 				SKIP_INSTALL = YES;
@@ -765,10 +762,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = (
-					"-D_GLFW_USE_CONFIG_H",
-					"-D_GLFW_USE_RETINA",
-				);
+				OTHER_CFLAGS = "-D_GLFW_USE_CONFIG_H";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.Utaha.glfw-framework";
 				PRODUCT_NAME = glfw3;
 				SKIP_INSTALL = YES;
